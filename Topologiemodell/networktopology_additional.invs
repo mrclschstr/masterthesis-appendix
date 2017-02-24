@@ -1,0 +1,40 @@
+-- Jede physische Netzkomponente hat direkt assoziierte Interfaces
+context NetworkComponent inv A_PhysicalNetworkComponentsHaveInterfaces:
+  self.physicalNetworkComponents->isEmpty() implies self.interfaces->notEmpty()
+
+/* Alle Netzkomponenten sind irgendwie miteinander verbunden. Dadurch wird die Entstehung
+von "Inseln" bei mehreren Netzkomponenten verhindert. */
+context NetworkComponent inv A_AllNetworkComponentsAreSomehowInterconnected:
+  self.getLayer1Reachability() = NetworkComponent.allInstances().id()->asSet()
+
+-- Jedes Layer1Interface erfordert einen Layer1Link
+context Layer1Interface inv A_EverLayer1InterfaceRequiresALayer1Link:
+  self.layer1Link <> null
+  
+-- Für jedes Layer1Interfaces muss es mindestens ein Layer2Interface geben
+context Layer1Interface inv A_Layer1InterfaceRequiresAtLeastOneLayer2Interface:
+  self.layer2Interfaces->notEmpty()
+
+-- Keine Kommunikation zu derselben Netzkomponente erlaubt (Layer 1)
+context Layer1Link inv A_Layer1SelfCommunicationProhibited:
+  self.layer1Interfaces->forAll(i1, i2 | i1 <> i2 implies i1.networkComponents->excludesAll(i2.networkComponents))
+  
+-- Jedes nicht aggregierte Interface (Simple oder AggregatorInterface) benötigt einen Link
+context Layer2Interface inv A_EverLayer2InterfaceRequiresALayer2LinkIfNotAggregated:
+  self.aggregatorInterface = null implies self.layer2Links->notEmpty()
+
+-- Jedes AggregatorInterface aggregiert mindestens zwei AggregationInterfaces
+context Layer2Interface inv A_EveryAggregatorInterfaceHasAtLeastTwoAggregationInterfaces:
+  self.aggregationInterfaces->notEmpty() implies self.aggregationInterfaces->size() >= 2
+
+-- Keine Kommunikation zu derselben Netzkomponente erlaubt (Layer 2)
+context Layer2Link inv A_Layer2SelfCommunicationProhibited:
+  self.layer2Interfaces->forAll(i1, i2 | i1 <> i2 implies i1.networkComponents->excludesAll(i2.networkComponents))
+
+-- Es dürfen keine Layer3Interface existieren
+context Layer3Interface inv A_NoLayer3InterfacesAllowed:
+  Layer3Interface.allInstances()->size() = 0
+
+-- Es dürfen keine Layer3Links existieren  
+context Layer3Link inv A_NoLayer3LinksAllowed:
+  Layer3Link.allInstances()->size() = 0

@@ -1,0 +1,3558 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<diagram_Layout version="13">
+  <diagramOptions>
+    <autolayout>false</autolayout>
+    <antialiasing>false</antialiasing>
+    <showassocnames>true</showassocnames>
+    <showattributes>true</showattributes>
+    <showmultiplicities>false</showmultiplicities>
+    <showoperations>false</showoperations>
+    <showrolenames>false</showrolenames>
+    <showgrid>false</showgrid>
+    <ShowStates>false</ShowStates>
+  </diagramOptions>
+  <node id="AccessInterface6" sizeCalculated="true" type="Object">
+    <name>AccessInterface6</name>
+    <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyFixed">
+      <x>865.0</x>
+      <y>300.0</y>
+    </strategy>
+    <hidden>false</hidden>
+  </node>
+  <node id="AccessInterface5" sizeCalculated="true" type="Object">
+    <name>AccessInterface5</name>
+    <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyFixed">
+      <x>493.0</x>
+      <y>304.0</y>
+    </strategy>
+    <hidden>false</hidden>
+  </node>
+  <node id="AccessInterface1" sizeCalculated="true" type="Object">
+    <name>AccessInterface1</name>
+    <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyFixed">
+      <x>383.0</x>
+      <y>163.0</y>
+    </strategy>
+    <hidden>false</hidden>
+  </node>
+  <node id="AccessInterface3" sizeCalculated="true" type="Object">
+    <name>AccessInterface3</name>
+    <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyFixed">
+      <x>381.0</x>
+      <y>446.0</y>
+    </strategy>
+    <hidden>false</hidden>
+  </node>
+  <node id="Layer1Link2" sizeCalculated="true" type="Object">
+    <name>Layer1Link2</name>
+    <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyFixed">
+      <x>710.0</x>
+      <y>573.0</y>
+    </strategy>
+    <hidden>false</hidden>
+  </node>
+  <node id="Layer2Link1" sizeCalculated="true" type="Object">
+    <name>Layer2Link1</name>
+    <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyFixed">
+      <x>702.0</x>
+      <y>302.0</y>
+    </strategy>
+    <hidden>false</hidden>
+  </node>
+  <node id="NetworkComponent2" sizeCalculated="true" type="Object">
+    <name>NetworkComponent2</name>
+    <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyFixed">
+      <x>1072.0</x>
+      <y>344.0</y>
+    </strategy>
+    <hidden>false</hidden>
+  </node>
+  <node id="Layer1Interface3" sizeCalculated="true" type="Object">
+    <name>Layer1Interface3</name>
+    <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyFixed">
+      <x>1090.7260331589034</x>
+      <y>572.9995199610382</y>
+    </strategy>
+    <hidden>false</hidden>
+  </node>
+  <node id="NetworkComponent1" sizeCalculated="true" type="Object">
+    <name>NetworkComponent1</name>
+    <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyFixed">
+      <x>259.0</x>
+      <y>344.0</y>
+    </strategy>
+    <hidden>false</hidden>
+  </node>
+  <node id="Layer1Interface4" sizeCalculated="true" type="Object">
+    <name>Layer1Interface4</name>
+    <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyFixed">
+      <x>277.5506628730594</x>
+      <y>574.1064004712398</y>
+    </strategy>
+    <hidden>false</hidden>
+  </node>
+  <node id="Layer1Interface1" sizeCalculated="true" type="Object">
+    <name>Layer1Interface1</name>
+    <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyFixed">
+      <x>278.0</x>
+      <y>112.0</y>
+    </strategy>
+    <hidden>false</hidden>
+  </node>
+  <node id="Layer1Interface2" sizeCalculated="true" type="Object">
+    <name>Layer1Interface2</name>
+    <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyFixed">
+      <x>1090.0</x>
+      <y>112.0</y>
+    </strategy>
+    <hidden>false</hidden>
+  </node>
+  <node id="Layer1Link1" sizeCalculated="true" type="Object">
+    <name>Layer1Link1</name>
+    <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyFixed">
+      <x>708.0</x>
+      <y>112.0</y>
+    </strategy>
+    <hidden>false</hidden>
+  </node>
+  <edge type="BinaryEdge">
+    <source>NetworkComponent1</source>
+    <target>AccessInterface3</target>
+    <name>HasInterfaces</name>
+    <properties>
+      <edgeproperty
+        id="[HasInterfaces : (interfaces:AccessInterface3, networkComponents:NetworkComponent1)]::source::multiplicity"
+        sizeCalculated="true" type="multiplicity" userDefined="false" visible="false">
+        <name>1..3</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <attached>[HasInterfaces : (interfaces:AccessInterface3, networkComponents:NetworkComponent1)]::WayPoint::0</attached>
+          <offset_x>8</offset_x>
+          <offset_y>8</offset_y>
+          <placement>BOTTOM</placement>
+        </strategy>
+        <hidden>true</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="[HasInterfaces : (interfaces:AccessInterface3, networkComponents:NetworkComponent1)]::source::rolename"
+        sizeCalculated="true" type="rolename" userDefined="false" visible="false">
+        <name>networkComponents</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <attached>[HasInterfaces : (interfaces:AccessInterface3, networkComponents:NetworkComponent1)]::WayPoint::0</attached>
+          <offset_x>8</offset_x>
+          <offset_y>8</offset_y>
+          <placement>TOP</placement>
+        </strategy>
+        <hidden>true</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="[HasInterfaces : (interfaces:AccessInterface3, networkComponents:NetworkComponent1)]::target::multiplicity"
+        sizeCalculated="true" type="multiplicity" userDefined="false" visible="false">
+        <name>*</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <attached>[HasInterfaces : (interfaces:AccessInterface3, networkComponents:NetworkComponent1)]::WayPoint::1</attached>
+          <offset_x>8</offset_x>
+          <offset_y>8</offset_y>
+          <placement>BOTTOM</placement>
+        </strategy>
+        <hidden>true</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="[HasInterfaces : (interfaces:AccessInterface3, networkComponents:NetworkComponent1)]::target::rolename"
+        sizeCalculated="true" type="rolename" userDefined="false" visible="false">
+        <name>interfaces</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <attached>[HasInterfaces : (interfaces:AccessInterface3, networkComponents:NetworkComponent1)]::WayPoint::1</attached>
+          <offset_x>8</offset_x>
+          <offset_y>8</offset_y>
+          <placement>TOP</placement>
+        </strategy>
+        <hidden>true</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="[HasInterfaces : (interfaces:AccessInterface3, networkComponents:NetworkComponent1)]::AssociationName"
+        sizeCalculated="true" type="associationName" userDefined="false" visible="false">
+        <name>HasInterfaces</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyInBetween">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <offsetX>0.0</offsetX>
+          <offsetY>-10.0</offsetY>
+          <related length="2">
+            <related0>[HasInterfaces : (interfaces:AccessInterface3, networkComponents:NetworkComponent1)]::WayPoint::0</related0>
+            <related1>[HasInterfaces : (interfaces:AccessInterface3, networkComponents:NetworkComponent1)]::WayPoint::1</related1>
+          </related>
+        </strategy>
+        <hidden>true</hidden>
+      </edgeproperty>
+    </properties>
+    <waypoints>
+      <edgeproperty
+        id="[HasInterfaces : (interfaces:AccessInterface3, networkComponents:NetworkComponent1)]::WayPoint::0"
+        sizeCalculated="true" type="WayPoint" userDefined="false" visible="true">
+        <name>0</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyAttachedIntersection">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+        </strategy>
+        <id>0</id>
+        <specialid>1</specialid>
+        <hidden>false</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="[HasInterfaces : (interfaces:AccessInterface3, networkComponents:NetworkComponent1)]::WayPoint::1"
+        sizeCalculated="true" type="WayPoint" userDefined="false" visible="true">
+        <name>1</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyAttachedIntersection">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+        </strategy>
+        <id>1</id>
+        <specialid>2</specialid>
+        <hidden>false</hidden>
+      </edgeproperty>
+    </waypoints>
+    <hidden>false</hidden>
+    <linkValue>[HasInterfaces : (interfaces:AccessInterface3, networkComponents:NetworkComponent1)]</linkValue>
+  </edge>
+  <edge type="BinaryEdge">
+    <source>AccessInterface6</source>
+    <target>Layer1Interface3</target>
+    <name>D_DependsOnLayer1Interface</name>
+    <properties>
+      <edgeproperty
+        id="virtual[D_DependsOnLayer1Interface : (derivedLayer1Interfaces:Layer1Interface3, derivedLayer2Interfaces:AccessInterface6)]::source::multiplicity"
+        sizeCalculated="true" type="multiplicity" userDefined="false" visible="true">
+        <name>*</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <attached>virtual[D_DependsOnLayer1Interface : (derivedLayer1Interfaces:Layer1Interface3, derivedLayer2Interfaces:AccessInterface6)]::WayPoint::0</attached>
+          <offset_x>8</offset_x>
+          <offset_y>8</offset_y>
+          <placement>BOTTOM</placement>
+        </strategy>
+        <hidden>false</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="virtual[D_DependsOnLayer1Interface : (derivedLayer1Interfaces:Layer1Interface3, derivedLayer2Interfaces:AccessInterface6)]::source::rolename"
+        sizeCalculated="true" type="rolename" userDefined="false" visible="true">
+        <name>derivedLayer2Interfaces</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <attached>virtual[D_DependsOnLayer1Interface : (derivedLayer1Interfaces:Layer1Interface3, derivedLayer2Interfaces:AccessInterface6)]::WayPoint::0</attached>
+          <offset_x>8</offset_x>
+          <offset_y>8</offset_y>
+          <placement>TOP</placement>
+        </strategy>
+        <hidden>false</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="virtual[D_DependsOnLayer1Interface : (derivedLayer1Interfaces:Layer1Interface3, derivedLayer2Interfaces:AccessInterface6)]::target::rolename"
+        sizeCalculated="true" type="rolename" userDefined="false" visible="true">
+        <name>/derivedLayer1Interfaces</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <attached>virtual[D_DependsOnLayer1Interface : (derivedLayer1Interfaces:Layer1Interface3, derivedLayer2Interfaces:AccessInterface6)]::WayPoint::1</attached>
+          <offset_x>8</offset_x>
+          <offset_y>8</offset_y>
+          <placement>TOP</placement>
+        </strategy>
+        <hidden>false</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="virtual[D_DependsOnLayer1Interface : (derivedLayer1Interfaces:Layer1Interface3, derivedLayer2Interfaces:AccessInterface6)]::target::multiplicity"
+        sizeCalculated="true" type="multiplicity" userDefined="false" visible="true">
+        <name>*</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <attached>virtual[D_DependsOnLayer1Interface : (derivedLayer1Interfaces:Layer1Interface3, derivedLayer2Interfaces:AccessInterface6)]::WayPoint::1</attached>
+          <offset_x>8</offset_x>
+          <offset_y>8</offset_y>
+          <placement>BOTTOM</placement>
+        </strategy>
+        <hidden>false</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="virtual[D_DependsOnLayer1Interface : (derivedLayer1Interfaces:Layer1Interface3, derivedLayer2Interfaces:AccessInterface6)]::AssociationName"
+        sizeCalculated="true" type="associationName" userDefined="true" visible="true">
+        <name>D_DependsOnLayer1Interface</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyInBetween">
+          <userOffsetX>-102.0</userOffsetX>
+          <userOffsetY>-11.0</userOffsetY>
+          <offsetX>0.0</offsetX>
+          <offsetY>-10.0</offsetY>
+          <related length="2">
+            <related0>virtual[D_DependsOnLayer1Interface : (derivedLayer1Interfaces:Layer1Interface3, derivedLayer2Interfaces:AccessInterface6)]::WayPoint::0</related0>
+            <related1>virtual[D_DependsOnLayer1Interface : (derivedLayer1Interfaces:Layer1Interface3, derivedLayer2Interfaces:AccessInterface6)]::WayPoint::1</related1>
+          </related>
+        </strategy>
+        <hidden>false</hidden>
+      </edgeproperty>
+    </properties>
+    <waypoints>
+      <edgeproperty
+        id="virtual[D_DependsOnLayer1Interface : (derivedLayer1Interfaces:Layer1Interface3, derivedLayer2Interfaces:AccessInterface6)]::WayPoint::0"
+        sizeCalculated="true" type="WayPoint" userDefined="false" visible="true">
+        <name>0</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyAttachedIntersection">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+        </strategy>
+        <id>0</id>
+        <specialid>1</specialid>
+        <hidden>false</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="virtual[D_DependsOnLayer1Interface : (derivedLayer1Interfaces:Layer1Interface3, derivedLayer2Interfaces:AccessInterface6)]::WayPoint::1"
+        sizeCalculated="true" type="WayPoint" userDefined="false" visible="true">
+        <name>1</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyAttachedIntersection">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+        </strategy>
+        <id>1</id>
+        <specialid>2</specialid>
+        <hidden>false</hidden>
+      </edgeproperty>
+    </waypoints>
+    <hidden>false</hidden>
+    <linkValue>virtual[D_DependsOnLayer1Interface : (derivedLayer1Interfaces:Layer1Interface3, derivedLayer2Interfaces:AccessInterface6)]</linkValue>
+  </edge>
+  <edge type="BinaryEdge">
+    <source>Layer1Interface4</source>
+    <target>Layer1Link2</target>
+    <name>HasLayer1Link</name>
+    <properties>
+      <edgeproperty
+        id="[HasLayer1Link : (layer1Interfaces:Layer1Interface4, layer1Link:Layer1Link2)]::source::multiplicity"
+        sizeCalculated="true" type="multiplicity" userDefined="false" visible="false">
+        <name>2</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <attached>[HasLayer1Link : (layer1Interfaces:Layer1Interface4, layer1Link:Layer1Link2)]::WayPoint::0</attached>
+          <offset_x>8</offset_x>
+          <offset_y>8</offset_y>
+          <placement>BOTTOM</placement>
+        </strategy>
+        <hidden>true</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="[HasLayer1Link : (layer1Interfaces:Layer1Interface4, layer1Link:Layer1Link2)]::source::rolename"
+        sizeCalculated="true" type="rolename" userDefined="false" visible="false">
+        <name>layer1Interfaces</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <attached>[HasLayer1Link : (layer1Interfaces:Layer1Interface4, layer1Link:Layer1Link2)]::WayPoint::0</attached>
+          <offset_x>8</offset_x>
+          <offset_y>8</offset_y>
+          <placement>TOP</placement>
+        </strategy>
+        <hidden>true</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="[HasLayer1Link : (layer1Interfaces:Layer1Interface4, layer1Link:Layer1Link2)]::target::multiplicity"
+        sizeCalculated="true" type="multiplicity" userDefined="false" visible="false">
+        <name>0..1</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <attached>[HasLayer1Link : (layer1Interfaces:Layer1Interface4, layer1Link:Layer1Link2)]::WayPoint::1</attached>
+          <offset_x>8</offset_x>
+          <offset_y>8</offset_y>
+          <placement>BOTTOM</placement>
+        </strategy>
+        <hidden>true</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="[HasLayer1Link : (layer1Interfaces:Layer1Interface4, layer1Link:Layer1Link2)]::target::rolename"
+        sizeCalculated="true" type="rolename" userDefined="false" visible="false">
+        <name>layer1Link</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <attached>[HasLayer1Link : (layer1Interfaces:Layer1Interface4, layer1Link:Layer1Link2)]::WayPoint::1</attached>
+          <offset_x>8</offset_x>
+          <offset_y>8</offset_y>
+          <placement>TOP</placement>
+        </strategy>
+        <hidden>true</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="[HasLayer1Link : (layer1Interfaces:Layer1Interface4, layer1Link:Layer1Link2)]::AssociationName"
+        sizeCalculated="true" type="associationName" userDefined="false" visible="false">
+        <name>HasLayer1Link</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyInBetween">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <offsetX>0.0</offsetX>
+          <offsetY>-10.0</offsetY>
+          <related length="2">
+            <related0>[HasLayer1Link : (layer1Interfaces:Layer1Interface4, layer1Link:Layer1Link2)]::WayPoint::0</related0>
+            <related1>[HasLayer1Link : (layer1Interfaces:Layer1Interface4, layer1Link:Layer1Link2)]::WayPoint::1</related1>
+          </related>
+        </strategy>
+        <hidden>true</hidden>
+      </edgeproperty>
+    </properties>
+    <waypoints>
+      <edgeproperty
+        id="[HasLayer1Link : (layer1Interfaces:Layer1Interface4, layer1Link:Layer1Link2)]::WayPoint::0"
+        sizeCalculated="true" type="WayPoint" userDefined="false" visible="true">
+        <name>0</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyAttachedIntersection">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+        </strategy>
+        <id>0</id>
+        <specialid>1</specialid>
+        <hidden>false</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="[HasLayer1Link : (layer1Interfaces:Layer1Interface4, layer1Link:Layer1Link2)]::WayPoint::1"
+        sizeCalculated="true" type="WayPoint" userDefined="false" visible="true">
+        <name>1</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyAttachedIntersection">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+        </strategy>
+        <id>1</id>
+        <specialid>2</specialid>
+        <hidden>false</hidden>
+      </edgeproperty>
+    </waypoints>
+    <hidden>false</hidden>
+    <linkValue>[HasLayer1Link : (layer1Interfaces:Layer1Interface4, layer1Link:Layer1Link2)]</linkValue>
+  </edge>
+  <edge type="BinaryEdge">
+    <source>NetworkComponent2</source>
+    <target>AccessInterface6</target>
+    <name>HasInterfaces</name>
+    <properties>
+      <edgeproperty
+        id="[HasInterfaces : (interfaces:AccessInterface6, networkComponents:NetworkComponent2)]::source::rolename"
+        sizeCalculated="true" type="rolename" userDefined="false" visible="false">
+        <name>networkComponents</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <attached>[HasInterfaces : (interfaces:AccessInterface6, networkComponents:NetworkComponent2)]::WayPoint::0</attached>
+          <offset_x>8</offset_x>
+          <offset_y>8</offset_y>
+          <placement>TOP</placement>
+        </strategy>
+        <hidden>true</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="[HasInterfaces : (interfaces:AccessInterface6, networkComponents:NetworkComponent2)]::source::multiplicity"
+        sizeCalculated="true" type="multiplicity" userDefined="false" visible="false">
+        <name>1..3</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <attached>[HasInterfaces : (interfaces:AccessInterface6, networkComponents:NetworkComponent2)]::WayPoint::0</attached>
+          <offset_x>8</offset_x>
+          <offset_y>8</offset_y>
+          <placement>BOTTOM</placement>
+        </strategy>
+        <hidden>true</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="[HasInterfaces : (interfaces:AccessInterface6, networkComponents:NetworkComponent2)]::target::rolename"
+        sizeCalculated="true" type="rolename" userDefined="false" visible="false">
+        <name>interfaces</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <attached>[HasInterfaces : (interfaces:AccessInterface6, networkComponents:NetworkComponent2)]::WayPoint::1</attached>
+          <offset_x>8</offset_x>
+          <offset_y>8</offset_y>
+          <placement>TOP</placement>
+        </strategy>
+        <hidden>true</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="[HasInterfaces : (interfaces:AccessInterface6, networkComponents:NetworkComponent2)]::target::multiplicity"
+        sizeCalculated="true" type="multiplicity" userDefined="false" visible="false">
+        <name>*</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <attached>[HasInterfaces : (interfaces:AccessInterface6, networkComponents:NetworkComponent2)]::WayPoint::1</attached>
+          <offset_x>8</offset_x>
+          <offset_y>8</offset_y>
+          <placement>BOTTOM</placement>
+        </strategy>
+        <hidden>true</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="[HasInterfaces : (interfaces:AccessInterface6, networkComponents:NetworkComponent2)]::AssociationName"
+        sizeCalculated="true" type="associationName" userDefined="true" visible="false">
+        <name>HasInterfaces</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyInBetween">
+          <userOffsetX>2.0</userOffsetX>
+          <userOffsetY>-7.0</userOffsetY>
+          <offsetX>0.0</offsetX>
+          <offsetY>-10.0</offsetY>
+          <related length="2">
+            <related0>[HasInterfaces : (interfaces:AccessInterface6, networkComponents:NetworkComponent2)]::WayPoint::0</related0>
+            <related1>[HasInterfaces : (interfaces:AccessInterface6, networkComponents:NetworkComponent2)]::WayPoint::1</related1>
+          </related>
+        </strategy>
+        <hidden>true</hidden>
+      </edgeproperty>
+    </properties>
+    <waypoints>
+      <edgeproperty
+        id="[HasInterfaces : (interfaces:AccessInterface6, networkComponents:NetworkComponent2)]::WayPoint::0"
+        sizeCalculated="true" type="WayPoint" userDefined="false" visible="true">
+        <name>0</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyAttachedIntersection">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+        </strategy>
+        <id>0</id>
+        <specialid>1</specialid>
+        <hidden>false</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="[HasInterfaces : (interfaces:AccessInterface6, networkComponents:NetworkComponent2)]::WayPoint::1"
+        sizeCalculated="true" type="WayPoint" userDefined="false" visible="true">
+        <name>1</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyAttachedIntersection">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+        </strategy>
+        <id>1</id>
+        <specialid>2</specialid>
+        <hidden>false</hidden>
+      </edgeproperty>
+    </waypoints>
+    <hidden>false</hidden>
+    <linkValue>[HasInterfaces : (interfaces:AccessInterface6, networkComponents:NetworkComponent2)]</linkValue>
+  </edge>
+  <edge type="BinaryEdge">
+    <source>Layer2Link1</source>
+    <target>Layer1Link1</target>
+    <name>D_DependsOnLayer1Link</name>
+    <properties>
+      <edgeproperty
+        id="virtual[D_DependsOnLayer1Link : (derivedLayer1Links:Layer1Link1, derivedLayer2Links:Layer2Link1)]::source::multiplicity"
+        sizeCalculated="true" type="multiplicity" userDefined="false" visible="true">
+        <name>*</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <attached>virtual[D_DependsOnLayer1Link : (derivedLayer1Links:Layer1Link1, derivedLayer2Links:Layer2Link1)]::WayPoint::0</attached>
+          <offset_x>8</offset_x>
+          <offset_y>8</offset_y>
+          <placement>BOTTOM</placement>
+        </strategy>
+        <hidden>false</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="virtual[D_DependsOnLayer1Link : (derivedLayer1Links:Layer1Link1, derivedLayer2Links:Layer2Link1)]::source::rolename"
+        sizeCalculated="true" type="rolename" userDefined="false" visible="true">
+        <name>derivedLayer2Links</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <attached>virtual[D_DependsOnLayer1Link : (derivedLayer1Links:Layer1Link1, derivedLayer2Links:Layer2Link1)]::WayPoint::0</attached>
+          <offset_x>8</offset_x>
+          <offset_y>8</offset_y>
+          <placement>TOP</placement>
+        </strategy>
+        <hidden>false</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="virtual[D_DependsOnLayer1Link : (derivedLayer1Links:Layer1Link1, derivedLayer2Links:Layer2Link1)]::target::multiplicity"
+        sizeCalculated="true" type="multiplicity" userDefined="false" visible="true">
+        <name>1..*</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <attached>virtual[D_DependsOnLayer1Link : (derivedLayer1Links:Layer1Link1, derivedLayer2Links:Layer2Link1)]::WayPoint::1</attached>
+          <offset_x>8</offset_x>
+          <offset_y>8</offset_y>
+          <placement>BOTTOM</placement>
+        </strategy>
+        <hidden>false</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="virtual[D_DependsOnLayer1Link : (derivedLayer1Links:Layer1Link1, derivedLayer2Links:Layer2Link1)]::target::rolename"
+        sizeCalculated="true" type="rolename" userDefined="false" visible="true">
+        <name>/derivedLayer1Links</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <attached>virtual[D_DependsOnLayer1Link : (derivedLayer1Links:Layer1Link1, derivedLayer2Links:Layer2Link1)]::WayPoint::1</attached>
+          <offset_x>8</offset_x>
+          <offset_y>8</offset_y>
+          <placement>TOP</placement>
+        </strategy>
+        <hidden>false</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="virtual[D_DependsOnLayer1Link : (derivedLayer1Links:Layer1Link1, derivedLayer2Links:Layer2Link1)]::AssociationName"
+        sizeCalculated="true" type="associationName" userDefined="true" visible="true">
+        <name>D_DependsOnLayer1Link</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyInBetween">
+          <userOffsetX>68.0</userOffsetX>
+          <userOffsetY>-17.0</userOffsetY>
+          <offsetX>0.0</offsetX>
+          <offsetY>-10.0</offsetY>
+          <related length="2">
+            <related0>virtual[D_DependsOnLayer1Link : (derivedLayer1Links:Layer1Link1, derivedLayer2Links:Layer2Link1)]::WayPoint::0</related0>
+            <related1>virtual[D_DependsOnLayer1Link : (derivedLayer1Links:Layer1Link1, derivedLayer2Links:Layer2Link1)]::WayPoint::1</related1>
+          </related>
+        </strategy>
+        <hidden>false</hidden>
+      </edgeproperty>
+    </properties>
+    <waypoints>
+      <edgeproperty
+        id="virtual[D_DependsOnLayer1Link : (derivedLayer1Links:Layer1Link1, derivedLayer2Links:Layer2Link1)]::WayPoint::0"
+        sizeCalculated="true" type="WayPoint" userDefined="false" visible="true">
+        <name>0</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyAttachedIntersection">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+        </strategy>
+        <id>0</id>
+        <specialid>1</specialid>
+        <hidden>false</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="virtual[D_DependsOnLayer1Link : (derivedLayer1Links:Layer1Link1, derivedLayer2Links:Layer2Link1)]::WayPoint::1"
+        sizeCalculated="true" type="WayPoint" userDefined="false" visible="true">
+        <name>1</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyAttachedIntersection">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+        </strategy>
+        <id>1</id>
+        <specialid>2</specialid>
+        <hidden>false</hidden>
+      </edgeproperty>
+    </waypoints>
+    <hidden>false</hidden>
+    <linkValue>virtual[D_DependsOnLayer1Link : (derivedLayer1Links:Layer1Link1, derivedLayer2Links:Layer2Link1)]</linkValue>
+  </edge>
+  <edge type="BinaryEdge">
+    <source>Layer1Interface3</source>
+    <target>Layer1Link2</target>
+    <name>HasLayer1Link</name>
+    <properties>
+      <edgeproperty
+        id="[HasLayer1Link : (layer1Interfaces:Layer1Interface3, layer1Link:Layer1Link2)]::source::multiplicity"
+        sizeCalculated="true" type="multiplicity" userDefined="false" visible="false">
+        <name>2</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <attached>[HasLayer1Link : (layer1Interfaces:Layer1Interface3, layer1Link:Layer1Link2)]::WayPoint::0</attached>
+          <offset_x>8</offset_x>
+          <offset_y>8</offset_y>
+          <placement>BOTTOM</placement>
+        </strategy>
+        <hidden>true</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="[HasLayer1Link : (layer1Interfaces:Layer1Interface3, layer1Link:Layer1Link2)]::source::rolename"
+        sizeCalculated="true" type="rolename" userDefined="false" visible="false">
+        <name>layer1Interfaces</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <attached>[HasLayer1Link : (layer1Interfaces:Layer1Interface3, layer1Link:Layer1Link2)]::WayPoint::0</attached>
+          <offset_x>8</offset_x>
+          <offset_y>8</offset_y>
+          <placement>TOP</placement>
+        </strategy>
+        <hidden>true</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="[HasLayer1Link : (layer1Interfaces:Layer1Interface3, layer1Link:Layer1Link2)]::target::multiplicity"
+        sizeCalculated="true" type="multiplicity" userDefined="false" visible="false">
+        <name>0..1</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <attached>[HasLayer1Link : (layer1Interfaces:Layer1Interface3, layer1Link:Layer1Link2)]::WayPoint::1</attached>
+          <offset_x>8</offset_x>
+          <offset_y>8</offset_y>
+          <placement>BOTTOM</placement>
+        </strategy>
+        <hidden>true</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="[HasLayer1Link : (layer1Interfaces:Layer1Interface3, layer1Link:Layer1Link2)]::target::rolename"
+        sizeCalculated="true" type="rolename" userDefined="false" visible="false">
+        <name>layer1Link</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <attached>[HasLayer1Link : (layer1Interfaces:Layer1Interface3, layer1Link:Layer1Link2)]::WayPoint::1</attached>
+          <offset_x>8</offset_x>
+          <offset_y>8</offset_y>
+          <placement>TOP</placement>
+        </strategy>
+        <hidden>true</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="[HasLayer1Link : (layer1Interfaces:Layer1Interface3, layer1Link:Layer1Link2)]::AssociationName"
+        sizeCalculated="true" type="associationName" userDefined="false" visible="false">
+        <name>HasLayer1Link</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyInBetween">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <offsetX>0.0</offsetX>
+          <offsetY>-10.0</offsetY>
+          <related length="2">
+            <related0>[HasLayer1Link : (layer1Interfaces:Layer1Interface3, layer1Link:Layer1Link2)]::WayPoint::0</related0>
+            <related1>[HasLayer1Link : (layer1Interfaces:Layer1Interface3, layer1Link:Layer1Link2)]::WayPoint::1</related1>
+          </related>
+        </strategy>
+        <hidden>true</hidden>
+      </edgeproperty>
+    </properties>
+    <waypoints>
+      <edgeproperty
+        id="[HasLayer1Link : (layer1Interfaces:Layer1Interface3, layer1Link:Layer1Link2)]::WayPoint::0"
+        sizeCalculated="true" type="WayPoint" userDefined="false" visible="true">
+        <name>0</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyAttachedIntersection">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+        </strategy>
+        <id>0</id>
+        <specialid>1</specialid>
+        <hidden>false</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="[HasLayer1Link : (layer1Interfaces:Layer1Interface3, layer1Link:Layer1Link2)]::WayPoint::1"
+        sizeCalculated="true" type="WayPoint" userDefined="false" visible="true">
+        <name>1</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyAttachedIntersection">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+        </strategy>
+        <id>1</id>
+        <specialid>2</specialid>
+        <hidden>false</hidden>
+      </edgeproperty>
+    </waypoints>
+    <hidden>false</hidden>
+    <linkValue>[HasLayer1Link : (layer1Interfaces:Layer1Interface3, layer1Link:Layer1Link2)]</linkValue>
+  </edge>
+  <edge type="BinaryEdge">
+    <source>AccessInterface6</source>
+    <target>Layer1Interface2</target>
+    <name>D_DependsOnLayer1Interface</name>
+    <properties>
+      <edgeproperty
+        id="virtual[D_DependsOnLayer1Interface : (derivedLayer1Interfaces:Layer1Interface2, derivedLayer2Interfaces:AccessInterface6)]::source::multiplicity"
+        sizeCalculated="true" type="multiplicity" userDefined="false" visible="true">
+        <name>*</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <attached>virtual[D_DependsOnLayer1Interface : (derivedLayer1Interfaces:Layer1Interface2, derivedLayer2Interfaces:AccessInterface6)]::WayPoint::0</attached>
+          <offset_x>8</offset_x>
+          <offset_y>8</offset_y>
+          <placement>BOTTOM</placement>
+        </strategy>
+        <hidden>false</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="virtual[D_DependsOnLayer1Interface : (derivedLayer1Interfaces:Layer1Interface2, derivedLayer2Interfaces:AccessInterface6)]::source::rolename"
+        sizeCalculated="true" type="rolename" userDefined="false" visible="true">
+        <name>derivedLayer2Interfaces</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <attached>virtual[D_DependsOnLayer1Interface : (derivedLayer1Interfaces:Layer1Interface2, derivedLayer2Interfaces:AccessInterface6)]::WayPoint::0</attached>
+          <offset_x>8</offset_x>
+          <offset_y>8</offset_y>
+          <placement>TOP</placement>
+        </strategy>
+        <hidden>false</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="virtual[D_DependsOnLayer1Interface : (derivedLayer1Interfaces:Layer1Interface2, derivedLayer2Interfaces:AccessInterface6)]::target::rolename"
+        sizeCalculated="true" type="rolename" userDefined="false" visible="true">
+        <name>/derivedLayer1Interfaces</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <attached>virtual[D_DependsOnLayer1Interface : (derivedLayer1Interfaces:Layer1Interface2, derivedLayer2Interfaces:AccessInterface6)]::WayPoint::1</attached>
+          <offset_x>8</offset_x>
+          <offset_y>8</offset_y>
+          <placement>TOP</placement>
+        </strategy>
+        <hidden>false</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="virtual[D_DependsOnLayer1Interface : (derivedLayer1Interfaces:Layer1Interface2, derivedLayer2Interfaces:AccessInterface6)]::target::multiplicity"
+        sizeCalculated="true" type="multiplicity" userDefined="false" visible="true">
+        <name>*</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <attached>virtual[D_DependsOnLayer1Interface : (derivedLayer1Interfaces:Layer1Interface2, derivedLayer2Interfaces:AccessInterface6)]::WayPoint::1</attached>
+          <offset_x>8</offset_x>
+          <offset_y>8</offset_y>
+          <placement>BOTTOM</placement>
+        </strategy>
+        <hidden>false</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="virtual[D_DependsOnLayer1Interface : (derivedLayer1Interfaces:Layer1Interface2, derivedLayer2Interfaces:AccessInterface6)]::AssociationName"
+        sizeCalculated="true" type="associationName" userDefined="true" visible="true">
+        <name>D_DependsOnLayer1Interface</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyInBetween">
+          <userOffsetX>-101.0</userOffsetX>
+          <userOffsetY>24.0</userOffsetY>
+          <offsetX>0.0</offsetX>
+          <offsetY>-10.0</offsetY>
+          <related length="2">
+            <related0>virtual[D_DependsOnLayer1Interface : (derivedLayer1Interfaces:Layer1Interface2, derivedLayer2Interfaces:AccessInterface6)]::WayPoint::0</related0>
+            <related1>virtual[D_DependsOnLayer1Interface : (derivedLayer1Interfaces:Layer1Interface2, derivedLayer2Interfaces:AccessInterface6)]::WayPoint::1</related1>
+          </related>
+        </strategy>
+        <hidden>false</hidden>
+      </edgeproperty>
+    </properties>
+    <waypoints>
+      <edgeproperty
+        id="virtual[D_DependsOnLayer1Interface : (derivedLayer1Interfaces:Layer1Interface2, derivedLayer2Interfaces:AccessInterface6)]::WayPoint::0"
+        sizeCalculated="true" type="WayPoint" userDefined="false" visible="true">
+        <name>0</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyAttachedIntersection">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+        </strategy>
+        <id>0</id>
+        <specialid>1</specialid>
+        <hidden>false</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="virtual[D_DependsOnLayer1Interface : (derivedLayer1Interfaces:Layer1Interface2, derivedLayer2Interfaces:AccessInterface6)]::WayPoint::1"
+        sizeCalculated="true" type="WayPoint" userDefined="false" visible="true">
+        <name>1</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyAttachedIntersection">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+        </strategy>
+        <id>1</id>
+        <specialid>2</specialid>
+        <hidden>false</hidden>
+      </edgeproperty>
+    </waypoints>
+    <hidden>false</hidden>
+    <linkValue>virtual[D_DependsOnLayer1Interface : (derivedLayer1Interfaces:Layer1Interface2, derivedLayer2Interfaces:AccessInterface6)]</linkValue>
+  </edge>
+  <edge type="BinaryEdge">
+    <source>AccessInterface5</source>
+    <target>Layer2Link1</target>
+    <name>HasLayer2Links</name>
+    <properties>
+      <edgeproperty
+        id="[HasLayer2Links : (layer2Interfaces:AccessInterface5, layer2Links:Layer2Link1)]::source::rolename"
+        sizeCalculated="true" type="rolename" userDefined="false" visible="false">
+        <name>layer2Interfaces</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <attached>[HasLayer2Links : (layer2Interfaces:AccessInterface5, layer2Links:Layer2Link1)]::WayPoint::0</attached>
+          <offset_x>8</offset_x>
+          <offset_y>8</offset_y>
+          <placement>TOP</placement>
+        </strategy>
+        <hidden>true</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="[HasLayer2Links : (layer2Interfaces:AccessInterface5, layer2Links:Layer2Link1)]::source::multiplicity"
+        sizeCalculated="true" type="multiplicity" userDefined="false" visible="false">
+        <name>2</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <attached>[HasLayer2Links : (layer2Interfaces:AccessInterface5, layer2Links:Layer2Link1)]::WayPoint::0</attached>
+          <offset_x>8</offset_x>
+          <offset_y>8</offset_y>
+          <placement>BOTTOM</placement>
+        </strategy>
+        <hidden>true</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="[HasLayer2Links : (layer2Interfaces:AccessInterface5, layer2Links:Layer2Link1)]::target::multiplicity"
+        sizeCalculated="true" type="multiplicity" userDefined="false" visible="false">
+        <name>*</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <attached>[HasLayer2Links : (layer2Interfaces:AccessInterface5, layer2Links:Layer2Link1)]::WayPoint::1</attached>
+          <offset_x>8</offset_x>
+          <offset_y>8</offset_y>
+          <placement>BOTTOM</placement>
+        </strategy>
+        <hidden>true</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="[HasLayer2Links : (layer2Interfaces:AccessInterface5, layer2Links:Layer2Link1)]::target::rolename"
+        sizeCalculated="true" type="rolename" userDefined="false" visible="false">
+        <name>layer2Links</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <attached>[HasLayer2Links : (layer2Interfaces:AccessInterface5, layer2Links:Layer2Link1)]::WayPoint::1</attached>
+          <offset_x>8</offset_x>
+          <offset_y>8</offset_y>
+          <placement>TOP</placement>
+        </strategy>
+        <hidden>true</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="[HasLayer2Links : (layer2Interfaces:AccessInterface5, layer2Links:Layer2Link1)]::AssociationName"
+        sizeCalculated="true" type="associationName" userDefined="false" visible="false">
+        <name>HasLayer2Links</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyInBetween">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <offsetX>0.0</offsetX>
+          <offsetY>-10.0</offsetY>
+          <related length="2">
+            <related0>[HasLayer2Links : (layer2Interfaces:AccessInterface5, layer2Links:Layer2Link1)]::WayPoint::0</related0>
+            <related1>[HasLayer2Links : (layer2Interfaces:AccessInterface5, layer2Links:Layer2Link1)]::WayPoint::1</related1>
+          </related>
+        </strategy>
+        <hidden>true</hidden>
+      </edgeproperty>
+    </properties>
+    <waypoints>
+      <edgeproperty
+        id="[HasLayer2Links : (layer2Interfaces:AccessInterface5, layer2Links:Layer2Link1)]::WayPoint::0"
+        sizeCalculated="true" type="WayPoint" userDefined="false" visible="true">
+        <name>0</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyAttachedIntersection">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+        </strategy>
+        <id>0</id>
+        <specialid>1</specialid>
+        <hidden>false</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="[HasLayer2Links : (layer2Interfaces:AccessInterface5, layer2Links:Layer2Link1)]::WayPoint::1"
+        sizeCalculated="true" type="WayPoint" userDefined="false" visible="true">
+        <name>1</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyAttachedIntersection">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+        </strategy>
+        <id>1</id>
+        <specialid>2</specialid>
+        <hidden>false</hidden>
+      </edgeproperty>
+    </waypoints>
+    <hidden>false</hidden>
+    <linkValue>[HasLayer2Links : (layer2Interfaces:AccessInterface5, layer2Links:Layer2Link1)]</linkValue>
+  </edge>
+  <edge type="BinaryEdge">
+    <source>AccessInterface1</source>
+    <target>Layer1Interface1</target>
+    <name>DependsOnLayer1Interface</name>
+    <properties>
+      <edgeproperty
+        id="[DependsOnLayer1Interface : (layer1Interface:Layer1Interface1, layer2Interfaces:AccessInterface1)]::source::multiplicity"
+        sizeCalculated="true" type="multiplicity" userDefined="false" visible="false">
+        <name>*</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <attached>[DependsOnLayer1Interface : (layer1Interface:Layer1Interface1, layer2Interfaces:AccessInterface1)]::WayPoint::0</attached>
+          <offset_x>8</offset_x>
+          <offset_y>8</offset_y>
+          <placement>BOTTOM</placement>
+        </strategy>
+        <hidden>true</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="[DependsOnLayer1Interface : (layer1Interface:Layer1Interface1, layer2Interfaces:AccessInterface1)]::source::rolename"
+        sizeCalculated="true" type="rolename" userDefined="false" visible="false">
+        <name>layer2Interfaces</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <attached>[DependsOnLayer1Interface : (layer1Interface:Layer1Interface1, layer2Interfaces:AccessInterface1)]::WayPoint::0</attached>
+          <offset_x>8</offset_x>
+          <offset_y>8</offset_y>
+          <placement>TOP</placement>
+        </strategy>
+        <hidden>true</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="[DependsOnLayer1Interface : (layer1Interface:Layer1Interface1, layer2Interfaces:AccessInterface1)]::target::rolename"
+        sizeCalculated="true" type="rolename" userDefined="false" visible="false">
+        <name>layer1Interface</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <attached>[DependsOnLayer1Interface : (layer1Interface:Layer1Interface1, layer2Interfaces:AccessInterface1)]::WayPoint::1</attached>
+          <offset_x>8</offset_x>
+          <offset_y>8</offset_y>
+          <placement>TOP</placement>
+        </strategy>
+        <hidden>true</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="[DependsOnLayer1Interface : (layer1Interface:Layer1Interface1, layer2Interfaces:AccessInterface1)]::target::multiplicity"
+        sizeCalculated="true" type="multiplicity" userDefined="false" visible="false">
+        <name>0..1</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <attached>[DependsOnLayer1Interface : (layer1Interface:Layer1Interface1, layer2Interfaces:AccessInterface1)]::WayPoint::1</attached>
+          <offset_x>8</offset_x>
+          <offset_y>8</offset_y>
+          <placement>BOTTOM</placement>
+        </strategy>
+        <hidden>true</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="[DependsOnLayer1Interface : (layer1Interface:Layer1Interface1, layer2Interfaces:AccessInterface1)]::AssociationName"
+        sizeCalculated="true" type="associationName" userDefined="false" visible="false">
+        <name>DependsOnLayer1Interface</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyInBetween">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <offsetX>0.0</offsetX>
+          <offsetY>-10.0</offsetY>
+          <related length="2">
+            <related0>[DependsOnLayer1Interface : (layer1Interface:Layer1Interface1, layer2Interfaces:AccessInterface1)]::WayPoint::0</related0>
+            <related1>[DependsOnLayer1Interface : (layer1Interface:Layer1Interface1, layer2Interfaces:AccessInterface1)]::WayPoint::1</related1>
+          </related>
+        </strategy>
+        <hidden>true</hidden>
+      </edgeproperty>
+    </properties>
+    <waypoints>
+      <edgeproperty
+        id="[DependsOnLayer1Interface : (layer1Interface:Layer1Interface1, layer2Interfaces:AccessInterface1)]::WayPoint::0"
+        sizeCalculated="true" type="WayPoint" userDefined="false" visible="true">
+        <name>0</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyAttachedIntersection">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+        </strategy>
+        <id>0</id>
+        <specialid>1</specialid>
+        <hidden>false</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="[DependsOnLayer1Interface : (layer1Interface:Layer1Interface1, layer2Interfaces:AccessInterface1)]::WayPoint::1"
+        sizeCalculated="true" type="WayPoint" userDefined="false" visible="true">
+        <name>1</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyAttachedIntersection">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+        </strategy>
+        <id>1</id>
+        <specialid>2</specialid>
+        <hidden>false</hidden>
+      </edgeproperty>
+    </waypoints>
+    <hidden>false</hidden>
+    <linkValue>[DependsOnLayer1Interface : (layer1Interface:Layer1Interface1, layer2Interfaces:AccessInterface1)]</linkValue>
+  </edge>
+  <edge type="BinaryEdge">
+    <source>AccessInterface5</source>
+    <target>AccessInterface3</target>
+    <name>HasAggregationLayer2Interfaces</name>
+    <properties>
+      <edgeproperty
+        id="[HasAggregationLayer2Interfaces : (aggregationInterfaces:AccessInterface3, aggregatorInterface:AccessInterface5)]::source::multiplicity"
+        sizeCalculated="true" type="multiplicity" userDefined="false" visible="false">
+        <name>0..1</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <attached>[HasAggregationLayer2Interfaces : (aggregationInterfaces:AccessInterface3, aggregatorInterface:AccessInterface5)]::WayPoint::0</attached>
+          <offset_x>8</offset_x>
+          <offset_y>8</offset_y>
+          <placement>BOTTOM</placement>
+        </strategy>
+        <hidden>true</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="[HasAggregationLayer2Interfaces : (aggregationInterfaces:AccessInterface3, aggregatorInterface:AccessInterface5)]::source::rolename"
+        sizeCalculated="true" type="rolename" userDefined="false" visible="false">
+        <name>aggregatorInterface</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <attached>[HasAggregationLayer2Interfaces : (aggregationInterfaces:AccessInterface3, aggregatorInterface:AccessInterface5)]::WayPoint::0</attached>
+          <offset_x>8</offset_x>
+          <offset_y>8</offset_y>
+          <placement>TOP</placement>
+        </strategy>
+        <hidden>true</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="[HasAggregationLayer2Interfaces : (aggregationInterfaces:AccessInterface3, aggregatorInterface:AccessInterface5)]::target::rolename"
+        sizeCalculated="true" type="rolename" userDefined="false" visible="false">
+        <name>aggregationInterfaces</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <attached>[HasAggregationLayer2Interfaces : (aggregationInterfaces:AccessInterface3, aggregatorInterface:AccessInterface5)]::WayPoint::1</attached>
+          <offset_x>8</offset_x>
+          <offset_y>8</offset_y>
+          <placement>TOP</placement>
+        </strategy>
+        <hidden>true</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="[HasAggregationLayer2Interfaces : (aggregationInterfaces:AccessInterface3, aggregatorInterface:AccessInterface5)]::target::multiplicity"
+        sizeCalculated="true" type="multiplicity" userDefined="false" visible="false">
+        <name>*</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <attached>[HasAggregationLayer2Interfaces : (aggregationInterfaces:AccessInterface3, aggregatorInterface:AccessInterface5)]::WayPoint::1</attached>
+          <offset_x>8</offset_x>
+          <offset_y>8</offset_y>
+          <placement>BOTTOM</placement>
+        </strategy>
+        <hidden>true</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="[HasAggregationLayer2Interfaces : (aggregationInterfaces:AccessInterface3, aggregatorInterface:AccessInterface5)]::AssociationName"
+        sizeCalculated="true" type="associationName" userDefined="false" visible="false">
+        <name>HasAggregationLayer2Interfaces</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyInBetween">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <offsetX>0.0</offsetX>
+          <offsetY>-10.0</offsetY>
+          <related length="2">
+            <related0>[HasAggregationLayer2Interfaces : (aggregationInterfaces:AccessInterface3, aggregatorInterface:AccessInterface5)]::WayPoint::0</related0>
+            <related1>[HasAggregationLayer2Interfaces : (aggregationInterfaces:AccessInterface3, aggregatorInterface:AccessInterface5)]::WayPoint::1</related1>
+          </related>
+        </strategy>
+        <hidden>true</hidden>
+      </edgeproperty>
+    </properties>
+    <waypoints>
+      <edgeproperty
+        id="[HasAggregationLayer2Interfaces : (aggregationInterfaces:AccessInterface3, aggregatorInterface:AccessInterface5)]::WayPoint::0"
+        sizeCalculated="true" type="WayPoint" userDefined="false" visible="true">
+        <name>0</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyAttachedIntersection">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+        </strategy>
+        <id>0</id>
+        <specialid>1</specialid>
+        <hidden>false</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="[HasAggregationLayer2Interfaces : (aggregationInterfaces:AccessInterface3, aggregatorInterface:AccessInterface5)]::WayPoint::1"
+        sizeCalculated="true" type="WayPoint" userDefined="false" visible="true">
+        <name>1</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyAttachedIntersection">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+        </strategy>
+        <id>1</id>
+        <specialid>2</specialid>
+        <hidden>false</hidden>
+      </edgeproperty>
+    </waypoints>
+    <hidden>false</hidden>
+    <linkValue>[HasAggregationLayer2Interfaces : (aggregationInterfaces:AccessInterface3, aggregatorInterface:AccessInterface5)]</linkValue>
+  </edge>
+  <edge type="BinaryEdge">
+    <source>Layer1Interface1</source>
+    <target>Layer1Link1</target>
+    <name>HasLayer1Link</name>
+    <properties>
+      <edgeproperty
+        id="[HasLayer1Link : (layer1Interfaces:Layer1Interface1, layer1Link:Layer1Link1)]::source::rolename"
+        sizeCalculated="true" type="rolename" userDefined="false" visible="false">
+        <name>layer1Interfaces</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <attached>[HasLayer1Link : (layer1Interfaces:Layer1Interface1, layer1Link:Layer1Link1)]::WayPoint::0</attached>
+          <offset_x>8</offset_x>
+          <offset_y>8</offset_y>
+          <placement>TOP</placement>
+        </strategy>
+        <hidden>true</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="[HasLayer1Link : (layer1Interfaces:Layer1Interface1, layer1Link:Layer1Link1)]::source::multiplicity"
+        sizeCalculated="true" type="multiplicity" userDefined="false" visible="false">
+        <name>2</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <attached>[HasLayer1Link : (layer1Interfaces:Layer1Interface1, layer1Link:Layer1Link1)]::WayPoint::0</attached>
+          <offset_x>8</offset_x>
+          <offset_y>8</offset_y>
+          <placement>BOTTOM</placement>
+        </strategy>
+        <hidden>true</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="[HasLayer1Link : (layer1Interfaces:Layer1Interface1, layer1Link:Layer1Link1)]::target::rolename"
+        sizeCalculated="true" type="rolename" userDefined="false" visible="false">
+        <name>layer1Link</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <attached>[HasLayer1Link : (layer1Interfaces:Layer1Interface1, layer1Link:Layer1Link1)]::WayPoint::1</attached>
+          <offset_x>8</offset_x>
+          <offset_y>8</offset_y>
+          <placement>TOP</placement>
+        </strategy>
+        <hidden>true</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="[HasLayer1Link : (layer1Interfaces:Layer1Interface1, layer1Link:Layer1Link1)]::target::multiplicity"
+        sizeCalculated="true" type="multiplicity" userDefined="false" visible="false">
+        <name>0..1</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <attached>[HasLayer1Link : (layer1Interfaces:Layer1Interface1, layer1Link:Layer1Link1)]::WayPoint::1</attached>
+          <offset_x>8</offset_x>
+          <offset_y>8</offset_y>
+          <placement>BOTTOM</placement>
+        </strategy>
+        <hidden>true</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="[HasLayer1Link : (layer1Interfaces:Layer1Interface1, layer1Link:Layer1Link1)]::AssociationName"
+        sizeCalculated="true" type="associationName" userDefined="false" visible="false">
+        <name>HasLayer1Link</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyInBetween">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <offsetX>0.0</offsetX>
+          <offsetY>-10.0</offsetY>
+          <related length="2">
+            <related0>[HasLayer1Link : (layer1Interfaces:Layer1Interface1, layer1Link:Layer1Link1)]::WayPoint::0</related0>
+            <related1>[HasLayer1Link : (layer1Interfaces:Layer1Interface1, layer1Link:Layer1Link1)]::WayPoint::1</related1>
+          </related>
+        </strategy>
+        <hidden>true</hidden>
+      </edgeproperty>
+    </properties>
+    <waypoints>
+      <edgeproperty
+        id="[HasLayer1Link : (layer1Interfaces:Layer1Interface1, layer1Link:Layer1Link1)]::WayPoint::0"
+        sizeCalculated="true" type="WayPoint" userDefined="false" visible="true">
+        <name>0</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyAttachedIntersection">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+        </strategy>
+        <id>0</id>
+        <specialid>1</specialid>
+        <hidden>false</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="[HasLayer1Link : (layer1Interfaces:Layer1Interface1, layer1Link:Layer1Link1)]::WayPoint::1"
+        sizeCalculated="true" type="WayPoint" userDefined="false" visible="true">
+        <name>1</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyAttachedIntersection">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+        </strategy>
+        <id>1</id>
+        <specialid>2</specialid>
+        <hidden>false</hidden>
+      </edgeproperty>
+    </waypoints>
+    <hidden>false</hidden>
+    <linkValue>[HasLayer1Link : (layer1Interfaces:Layer1Interface1, layer1Link:Layer1Link1)]</linkValue>
+  </edge>
+  <edge type="BinaryEdge">
+    <source>Layer2Link1</source>
+    <target>Layer1Link2</target>
+    <name>D_DependsOnLayer1Link</name>
+    <properties>
+      <edgeproperty
+        id="virtual[D_DependsOnLayer1Link : (derivedLayer1Links:Layer1Link2, derivedLayer2Links:Layer2Link1)]::source::rolename"
+        sizeCalculated="true" type="rolename" userDefined="false" visible="true">
+        <name>derivedLayer2Links</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <attached>virtual[D_DependsOnLayer1Link : (derivedLayer1Links:Layer1Link2, derivedLayer2Links:Layer2Link1)]::WayPoint::0</attached>
+          <offset_x>8</offset_x>
+          <offset_y>8</offset_y>
+          <placement>TOP</placement>
+        </strategy>
+        <hidden>false</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="virtual[D_DependsOnLayer1Link : (derivedLayer1Links:Layer1Link2, derivedLayer2Links:Layer2Link1)]::source::multiplicity"
+        sizeCalculated="true" type="multiplicity" userDefined="false" visible="true">
+        <name>*</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <attached>virtual[D_DependsOnLayer1Link : (derivedLayer1Links:Layer1Link2, derivedLayer2Links:Layer2Link1)]::WayPoint::0</attached>
+          <offset_x>8</offset_x>
+          <offset_y>8</offset_y>
+          <placement>BOTTOM</placement>
+        </strategy>
+        <hidden>false</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="virtual[D_DependsOnLayer1Link : (derivedLayer1Links:Layer1Link2, derivedLayer2Links:Layer2Link1)]::target::rolename"
+        sizeCalculated="true" type="rolename" userDefined="false" visible="true">
+        <name>/derivedLayer1Links</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <attached>virtual[D_DependsOnLayer1Link : (derivedLayer1Links:Layer1Link2, derivedLayer2Links:Layer2Link1)]::WayPoint::1</attached>
+          <offset_x>8</offset_x>
+          <offset_y>8</offset_y>
+          <placement>TOP</placement>
+        </strategy>
+        <hidden>false</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="virtual[D_DependsOnLayer1Link : (derivedLayer1Links:Layer1Link2, derivedLayer2Links:Layer2Link1)]::target::multiplicity"
+        sizeCalculated="true" type="multiplicity" userDefined="false" visible="true">
+        <name>1..*</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <attached>virtual[D_DependsOnLayer1Link : (derivedLayer1Links:Layer1Link2, derivedLayer2Links:Layer2Link1)]::WayPoint::1</attached>
+          <offset_x>8</offset_x>
+          <offset_y>8</offset_y>
+          <placement>BOTTOM</placement>
+        </strategy>
+        <hidden>false</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="virtual[D_DependsOnLayer1Link : (derivedLayer1Links:Layer1Link2, derivedLayer2Links:Layer2Link1)]::AssociationName"
+        sizeCalculated="true" type="associationName" userDefined="true" visible="true">
+        <name>D_DependsOnLayer1Link</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyInBetween">
+          <userOffsetX>66.0</userOffsetX>
+          <userOffsetY>15.0</userOffsetY>
+          <offsetX>0.0</offsetX>
+          <offsetY>-10.0</offsetY>
+          <related length="2">
+            <related0>virtual[D_DependsOnLayer1Link : (derivedLayer1Links:Layer1Link2, derivedLayer2Links:Layer2Link1)]::WayPoint::0</related0>
+            <related1>virtual[D_DependsOnLayer1Link : (derivedLayer1Links:Layer1Link2, derivedLayer2Links:Layer2Link1)]::WayPoint::1</related1>
+          </related>
+        </strategy>
+        <hidden>false</hidden>
+      </edgeproperty>
+    </properties>
+    <waypoints>
+      <edgeproperty
+        id="virtual[D_DependsOnLayer1Link : (derivedLayer1Links:Layer1Link2, derivedLayer2Links:Layer2Link1)]::WayPoint::0"
+        sizeCalculated="true" type="WayPoint" userDefined="false" visible="true">
+        <name>0</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyAttachedIntersection">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+        </strategy>
+        <id>0</id>
+        <specialid>1</specialid>
+        <hidden>false</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="virtual[D_DependsOnLayer1Link : (derivedLayer1Links:Layer1Link2, derivedLayer2Links:Layer2Link1)]::WayPoint::1"
+        sizeCalculated="true" type="WayPoint" userDefined="false" visible="true">
+        <name>1</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyAttachedIntersection">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+        </strategy>
+        <id>1</id>
+        <specialid>2</specialid>
+        <hidden>false</hidden>
+      </edgeproperty>
+    </waypoints>
+    <hidden>false</hidden>
+    <linkValue>virtual[D_DependsOnLayer1Link : (derivedLayer1Links:Layer1Link2, derivedLayer2Links:Layer2Link1)]</linkValue>
+  </edge>
+  <edge type="BinaryEdge">
+    <source>NetworkComponent2</source>
+    <target>Layer1Interface2</target>
+    <name>HasInterfaces</name>
+    <properties>
+      <edgeproperty
+        id="[HasInterfaces : (interfaces:Layer1Interface2, networkComponents:NetworkComponent2)]::source::rolename"
+        sizeCalculated="true" type="rolename" userDefined="false" visible="false">
+        <name>networkComponents</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <attached>[HasInterfaces : (interfaces:Layer1Interface2, networkComponents:NetworkComponent2)]::WayPoint::0</attached>
+          <offset_x>8</offset_x>
+          <offset_y>8</offset_y>
+          <placement>TOP</placement>
+        </strategy>
+        <hidden>true</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="[HasInterfaces : (interfaces:Layer1Interface2, networkComponents:NetworkComponent2)]::source::multiplicity"
+        sizeCalculated="true" type="multiplicity" userDefined="false" visible="false">
+        <name>1..3</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <attached>[HasInterfaces : (interfaces:Layer1Interface2, networkComponents:NetworkComponent2)]::WayPoint::0</attached>
+          <offset_x>8</offset_x>
+          <offset_y>8</offset_y>
+          <placement>BOTTOM</placement>
+        </strategy>
+        <hidden>true</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="[HasInterfaces : (interfaces:Layer1Interface2, networkComponents:NetworkComponent2)]::target::multiplicity"
+        sizeCalculated="true" type="multiplicity" userDefined="false" visible="false">
+        <name>*</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <attached>[HasInterfaces : (interfaces:Layer1Interface2, networkComponents:NetworkComponent2)]::WayPoint::1</attached>
+          <offset_x>8</offset_x>
+          <offset_y>8</offset_y>
+          <placement>BOTTOM</placement>
+        </strategy>
+        <hidden>true</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="[HasInterfaces : (interfaces:Layer1Interface2, networkComponents:NetworkComponent2)]::target::rolename"
+        sizeCalculated="true" type="rolename" userDefined="false" visible="false">
+        <name>interfaces</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <attached>[HasInterfaces : (interfaces:Layer1Interface2, networkComponents:NetworkComponent2)]::WayPoint::1</attached>
+          <offset_x>8</offset_x>
+          <offset_y>8</offset_y>
+          <placement>TOP</placement>
+        </strategy>
+        <hidden>true</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="[HasInterfaces : (interfaces:Layer1Interface2, networkComponents:NetworkComponent2)]::AssociationName"
+        sizeCalculated="true" type="associationName" userDefined="false" visible="false">
+        <name>HasInterfaces</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyInBetween">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <offsetX>0.0</offsetX>
+          <offsetY>-10.0</offsetY>
+          <related length="2">
+            <related0>[HasInterfaces : (interfaces:Layer1Interface2, networkComponents:NetworkComponent2)]::WayPoint::0</related0>
+            <related1>[HasInterfaces : (interfaces:Layer1Interface2, networkComponents:NetworkComponent2)]::WayPoint::1</related1>
+          </related>
+        </strategy>
+        <hidden>true</hidden>
+      </edgeproperty>
+    </properties>
+    <waypoints>
+      <edgeproperty
+        id="[HasInterfaces : (interfaces:Layer1Interface2, networkComponents:NetworkComponent2)]::WayPoint::0"
+        sizeCalculated="true" type="WayPoint" userDefined="false" visible="true">
+        <name>0</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyAttachedIntersection">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+        </strategy>
+        <id>0</id>
+        <specialid>1</specialid>
+        <hidden>false</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="[HasInterfaces : (interfaces:Layer1Interface2, networkComponents:NetworkComponent2)]::WayPoint::1"
+        sizeCalculated="true" type="WayPoint" userDefined="false" visible="true">
+        <name>1</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyAttachedIntersection">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+        </strategy>
+        <id>1</id>
+        <specialid>2</specialid>
+        <hidden>false</hidden>
+      </edgeproperty>
+    </waypoints>
+    <hidden>false</hidden>
+    <linkValue>[HasInterfaces : (interfaces:Layer1Interface2, networkComponents:NetworkComponent2)]</linkValue>
+  </edge>
+  <edge type="BinaryEdge">
+    <source>AccessInterface6</source>
+    <target>Layer2Link1</target>
+    <name>HasLayer2Links</name>
+    <properties>
+      <edgeproperty
+        id="[HasLayer2Links : (layer2Interfaces:AccessInterface6, layer2Links:Layer2Link1)]::source::rolename"
+        sizeCalculated="true" type="rolename" userDefined="false" visible="false">
+        <name>layer2Interfaces</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <attached>[HasLayer2Links : (layer2Interfaces:AccessInterface6, layer2Links:Layer2Link1)]::WayPoint::0</attached>
+          <offset_x>8</offset_x>
+          <offset_y>8</offset_y>
+          <placement>TOP</placement>
+        </strategy>
+        <hidden>true</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="[HasLayer2Links : (layer2Interfaces:AccessInterface6, layer2Links:Layer2Link1)]::source::multiplicity"
+        sizeCalculated="true" type="multiplicity" userDefined="false" visible="false">
+        <name>2</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <attached>[HasLayer2Links : (layer2Interfaces:AccessInterface6, layer2Links:Layer2Link1)]::WayPoint::0</attached>
+          <offset_x>8</offset_x>
+          <offset_y>8</offset_y>
+          <placement>BOTTOM</placement>
+        </strategy>
+        <hidden>true</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="[HasLayer2Links : (layer2Interfaces:AccessInterface6, layer2Links:Layer2Link1)]::target::rolename"
+        sizeCalculated="true" type="rolename" userDefined="false" visible="false">
+        <name>layer2Links</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <attached>[HasLayer2Links : (layer2Interfaces:AccessInterface6, layer2Links:Layer2Link1)]::WayPoint::1</attached>
+          <offset_x>8</offset_x>
+          <offset_y>8</offset_y>
+          <placement>TOP</placement>
+        </strategy>
+        <hidden>true</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="[HasLayer2Links : (layer2Interfaces:AccessInterface6, layer2Links:Layer2Link1)]::target::multiplicity"
+        sizeCalculated="true" type="multiplicity" userDefined="false" visible="false">
+        <name>*</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <attached>[HasLayer2Links : (layer2Interfaces:AccessInterface6, layer2Links:Layer2Link1)]::WayPoint::1</attached>
+          <offset_x>8</offset_x>
+          <offset_y>8</offset_y>
+          <placement>BOTTOM</placement>
+        </strategy>
+        <hidden>true</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="[HasLayer2Links : (layer2Interfaces:AccessInterface6, layer2Links:Layer2Link1)]::AssociationName"
+        sizeCalculated="true" type="associationName" userDefined="false" visible="false">
+        <name>HasLayer2Links</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyInBetween">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <offsetX>0.0</offsetX>
+          <offsetY>-10.0</offsetY>
+          <related length="2">
+            <related0>[HasLayer2Links : (layer2Interfaces:AccessInterface6, layer2Links:Layer2Link1)]::WayPoint::0</related0>
+            <related1>[HasLayer2Links : (layer2Interfaces:AccessInterface6, layer2Links:Layer2Link1)]::WayPoint::1</related1>
+          </related>
+        </strategy>
+        <hidden>true</hidden>
+      </edgeproperty>
+    </properties>
+    <waypoints>
+      <edgeproperty
+        id="[HasLayer2Links : (layer2Interfaces:AccessInterface6, layer2Links:Layer2Link1)]::WayPoint::0"
+        sizeCalculated="true" type="WayPoint" userDefined="false" visible="true">
+        <name>0</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyAttachedIntersection">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+        </strategy>
+        <id>0</id>
+        <specialid>1</specialid>
+        <hidden>false</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="[HasLayer2Links : (layer2Interfaces:AccessInterface6, layer2Links:Layer2Link1)]::WayPoint::1"
+        sizeCalculated="true" type="WayPoint" userDefined="false" visible="true">
+        <name>1</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyAttachedIntersection">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+        </strategy>
+        <id>1</id>
+        <specialid>2</specialid>
+        <hidden>false</hidden>
+      </edgeproperty>
+    </waypoints>
+    <hidden>false</hidden>
+    <linkValue>[HasLayer2Links : (layer2Interfaces:AccessInterface6, layer2Links:Layer2Link1)]</linkValue>
+  </edge>
+  <edge type="BinaryEdge">
+    <source>NetworkComponent1</source>
+    <target>AccessInterface5</target>
+    <name>HasInterfaces</name>
+    <properties>
+      <edgeproperty
+        id="[HasInterfaces : (interfaces:AccessInterface5, networkComponents:NetworkComponent1)]::source::multiplicity"
+        sizeCalculated="true" type="multiplicity" userDefined="false" visible="false">
+        <name>1..3</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <attached>[HasInterfaces : (interfaces:AccessInterface5, networkComponents:NetworkComponent1)]::WayPoint::0</attached>
+          <offset_x>8</offset_x>
+          <offset_y>8</offset_y>
+          <placement>BOTTOM</placement>
+        </strategy>
+        <hidden>true</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="[HasInterfaces : (interfaces:AccessInterface5, networkComponents:NetworkComponent1)]::source::rolename"
+        sizeCalculated="true" type="rolename" userDefined="false" visible="false">
+        <name>networkComponents</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <attached>[HasInterfaces : (interfaces:AccessInterface5, networkComponents:NetworkComponent1)]::WayPoint::0</attached>
+          <offset_x>8</offset_x>
+          <offset_y>8</offset_y>
+          <placement>TOP</placement>
+        </strategy>
+        <hidden>true</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="[HasInterfaces : (interfaces:AccessInterface5, networkComponents:NetworkComponent1)]::target::multiplicity"
+        sizeCalculated="true" type="multiplicity" userDefined="false" visible="false">
+        <name>*</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <attached>[HasInterfaces : (interfaces:AccessInterface5, networkComponents:NetworkComponent1)]::WayPoint::1</attached>
+          <offset_x>8</offset_x>
+          <offset_y>8</offset_y>
+          <placement>BOTTOM</placement>
+        </strategy>
+        <hidden>true</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="[HasInterfaces : (interfaces:AccessInterface5, networkComponents:NetworkComponent1)]::target::rolename"
+        sizeCalculated="true" type="rolename" userDefined="false" visible="false">
+        <name>interfaces</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <attached>[HasInterfaces : (interfaces:AccessInterface5, networkComponents:NetworkComponent1)]::WayPoint::1</attached>
+          <offset_x>8</offset_x>
+          <offset_y>8</offset_y>
+          <placement>TOP</placement>
+        </strategy>
+        <hidden>true</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="[HasInterfaces : (interfaces:AccessInterface5, networkComponents:NetworkComponent1)]::AssociationName"
+        sizeCalculated="true" type="associationName" userDefined="false" visible="false">
+        <name>HasInterfaces</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyInBetween">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <offsetX>0.0</offsetX>
+          <offsetY>-10.0</offsetY>
+          <related length="2">
+            <related0>[HasInterfaces : (interfaces:AccessInterface5, networkComponents:NetworkComponent1)]::WayPoint::0</related0>
+            <related1>[HasInterfaces : (interfaces:AccessInterface5, networkComponents:NetworkComponent1)]::WayPoint::1</related1>
+          </related>
+        </strategy>
+        <hidden>true</hidden>
+      </edgeproperty>
+    </properties>
+    <waypoints>
+      <edgeproperty
+        id="[HasInterfaces : (interfaces:AccessInterface5, networkComponents:NetworkComponent1)]::WayPoint::0"
+        sizeCalculated="true" type="WayPoint" userDefined="false" visible="true">
+        <name>0</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyAttachedIntersection">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+        </strategy>
+        <id>0</id>
+        <specialid>1</specialid>
+        <hidden>false</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="[HasInterfaces : (interfaces:AccessInterface5, networkComponents:NetworkComponent1)]::WayPoint::1"
+        sizeCalculated="true" type="WayPoint" userDefined="false" visible="true">
+        <name>1</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyAttachedIntersection">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+        </strategy>
+        <id>1</id>
+        <specialid>2</specialid>
+        <hidden>false</hidden>
+      </edgeproperty>
+    </waypoints>
+    <hidden>false</hidden>
+    <linkValue>[HasInterfaces : (interfaces:AccessInterface5, networkComponents:NetworkComponent1)]</linkValue>
+  </edge>
+  <edge type="BinaryEdge">
+    <source>NetworkComponent1</source>
+    <target>Layer1Interface4</target>
+    <name>HasInterfaces</name>
+    <properties>
+      <edgeproperty
+        id="[HasInterfaces : (interfaces:Layer1Interface4, networkComponents:NetworkComponent1)]::source::rolename"
+        sizeCalculated="true" type="rolename" userDefined="false" visible="false">
+        <name>networkComponents</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <attached>[HasInterfaces : (interfaces:Layer1Interface4, networkComponents:NetworkComponent1)]::WayPoint::0</attached>
+          <offset_x>8</offset_x>
+          <offset_y>8</offset_y>
+          <placement>TOP</placement>
+        </strategy>
+        <hidden>true</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="[HasInterfaces : (interfaces:Layer1Interface4, networkComponents:NetworkComponent1)]::source::multiplicity"
+        sizeCalculated="true" type="multiplicity" userDefined="false" visible="false">
+        <name>1..3</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <attached>[HasInterfaces : (interfaces:Layer1Interface4, networkComponents:NetworkComponent1)]::WayPoint::0</attached>
+          <offset_x>8</offset_x>
+          <offset_y>8</offset_y>
+          <placement>BOTTOM</placement>
+        </strategy>
+        <hidden>true</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="[HasInterfaces : (interfaces:Layer1Interface4, networkComponents:NetworkComponent1)]::target::multiplicity"
+        sizeCalculated="true" type="multiplicity" userDefined="false" visible="false">
+        <name>*</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <attached>[HasInterfaces : (interfaces:Layer1Interface4, networkComponents:NetworkComponent1)]::WayPoint::1</attached>
+          <offset_x>8</offset_x>
+          <offset_y>8</offset_y>
+          <placement>BOTTOM</placement>
+        </strategy>
+        <hidden>true</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="[HasInterfaces : (interfaces:Layer1Interface4, networkComponents:NetworkComponent1)]::target::rolename"
+        sizeCalculated="true" type="rolename" userDefined="false" visible="false">
+        <name>interfaces</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <attached>[HasInterfaces : (interfaces:Layer1Interface4, networkComponents:NetworkComponent1)]::WayPoint::1</attached>
+          <offset_x>8</offset_x>
+          <offset_y>8</offset_y>
+          <placement>TOP</placement>
+        </strategy>
+        <hidden>true</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="[HasInterfaces : (interfaces:Layer1Interface4, networkComponents:NetworkComponent1)]::AssociationName"
+        sizeCalculated="true" type="associationName" userDefined="false" visible="false">
+        <name>HasInterfaces</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyInBetween">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <offsetX>0.0</offsetX>
+          <offsetY>-10.0</offsetY>
+          <related length="2">
+            <related0>[HasInterfaces : (interfaces:Layer1Interface4, networkComponents:NetworkComponent1)]::WayPoint::0</related0>
+            <related1>[HasInterfaces : (interfaces:Layer1Interface4, networkComponents:NetworkComponent1)]::WayPoint::1</related1>
+          </related>
+        </strategy>
+        <hidden>true</hidden>
+      </edgeproperty>
+    </properties>
+    <waypoints>
+      <edgeproperty
+        id="[HasInterfaces : (interfaces:Layer1Interface4, networkComponents:NetworkComponent1)]::WayPoint::0"
+        sizeCalculated="true" type="WayPoint" userDefined="false" visible="true">
+        <name>0</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyAttachedIntersection">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+        </strategy>
+        <id>0</id>
+        <specialid>1</specialid>
+        <hidden>false</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="[HasInterfaces : (interfaces:Layer1Interface4, networkComponents:NetworkComponent1)]::WayPoint::1"
+        sizeCalculated="true" type="WayPoint" userDefined="false" visible="true">
+        <name>1</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyAttachedIntersection">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+        </strategy>
+        <id>1</id>
+        <specialid>2</specialid>
+        <hidden>false</hidden>
+      </edgeproperty>
+    </waypoints>
+    <hidden>false</hidden>
+    <linkValue>[HasInterfaces : (interfaces:Layer1Interface4, networkComponents:NetworkComponent1)]</linkValue>
+  </edge>
+  <edge type="BinaryEdge">
+    <source>NetworkComponent2</source>
+    <target>Layer1Interface3</target>
+    <name>HasInterfaces</name>
+    <properties>
+      <edgeproperty
+        id="[HasInterfaces : (interfaces:Layer1Interface3, networkComponents:NetworkComponent2)]::source::rolename"
+        sizeCalculated="true" type="rolename" userDefined="false" visible="false">
+        <name>networkComponents</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <attached>[HasInterfaces : (interfaces:Layer1Interface3, networkComponents:NetworkComponent2)]::WayPoint::0</attached>
+          <offset_x>8</offset_x>
+          <offset_y>8</offset_y>
+          <placement>TOP</placement>
+        </strategy>
+        <hidden>true</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="[HasInterfaces : (interfaces:Layer1Interface3, networkComponents:NetworkComponent2)]::source::multiplicity"
+        sizeCalculated="true" type="multiplicity" userDefined="false" visible="false">
+        <name>1..3</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <attached>[HasInterfaces : (interfaces:Layer1Interface3, networkComponents:NetworkComponent2)]::WayPoint::0</attached>
+          <offset_x>8</offset_x>
+          <offset_y>8</offset_y>
+          <placement>BOTTOM</placement>
+        </strategy>
+        <hidden>true</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="[HasInterfaces : (interfaces:Layer1Interface3, networkComponents:NetworkComponent2)]::target::multiplicity"
+        sizeCalculated="true" type="multiplicity" userDefined="false" visible="false">
+        <name>*</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <attached>[HasInterfaces : (interfaces:Layer1Interface3, networkComponents:NetworkComponent2)]::WayPoint::1</attached>
+          <offset_x>8</offset_x>
+          <offset_y>8</offset_y>
+          <placement>BOTTOM</placement>
+        </strategy>
+        <hidden>true</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="[HasInterfaces : (interfaces:Layer1Interface3, networkComponents:NetworkComponent2)]::target::rolename"
+        sizeCalculated="true" type="rolename" userDefined="false" visible="false">
+        <name>interfaces</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <attached>[HasInterfaces : (interfaces:Layer1Interface3, networkComponents:NetworkComponent2)]::WayPoint::1</attached>
+          <offset_x>8</offset_x>
+          <offset_y>8</offset_y>
+          <placement>TOP</placement>
+        </strategy>
+        <hidden>true</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="[HasInterfaces : (interfaces:Layer1Interface3, networkComponents:NetworkComponent2)]::AssociationName"
+        sizeCalculated="true" type="associationName" userDefined="false" visible="false">
+        <name>HasInterfaces</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyInBetween">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <offsetX>0.0</offsetX>
+          <offsetY>-10.0</offsetY>
+          <related length="2">
+            <related0>[HasInterfaces : (interfaces:Layer1Interface3, networkComponents:NetworkComponent2)]::WayPoint::0</related0>
+            <related1>[HasInterfaces : (interfaces:Layer1Interface3, networkComponents:NetworkComponent2)]::WayPoint::1</related1>
+          </related>
+        </strategy>
+        <hidden>true</hidden>
+      </edgeproperty>
+    </properties>
+    <waypoints>
+      <edgeproperty
+        id="[HasInterfaces : (interfaces:Layer1Interface3, networkComponents:NetworkComponent2)]::WayPoint::0"
+        sizeCalculated="true" type="WayPoint" userDefined="false" visible="true">
+        <name>0</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyAttachedIntersection">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+        </strategy>
+        <id>0</id>
+        <specialid>1</specialid>
+        <hidden>false</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="[HasInterfaces : (interfaces:Layer1Interface3, networkComponents:NetworkComponent2)]::WayPoint::1"
+        sizeCalculated="true" type="WayPoint" userDefined="false" visible="true">
+        <name>1</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyAttachedIntersection">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+        </strategy>
+        <id>1</id>
+        <specialid>2</specialid>
+        <hidden>false</hidden>
+      </edgeproperty>
+    </waypoints>
+    <hidden>false</hidden>
+    <linkValue>[HasInterfaces : (interfaces:Layer1Interface3, networkComponents:NetworkComponent2)]</linkValue>
+  </edge>
+  <edge type="BinaryEdge">
+    <source>Layer1Interface2</source>
+    <target>Layer1Link1</target>
+    <name>HasLayer1Link</name>
+    <properties>
+      <edgeproperty
+        id="[HasLayer1Link : (layer1Interfaces:Layer1Interface2, layer1Link:Layer1Link1)]::source::multiplicity"
+        sizeCalculated="true" type="multiplicity" userDefined="false" visible="false">
+        <name>2</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <attached>[HasLayer1Link : (layer1Interfaces:Layer1Interface2, layer1Link:Layer1Link1)]::WayPoint::0</attached>
+          <offset_x>8</offset_x>
+          <offset_y>8</offset_y>
+          <placement>BOTTOM</placement>
+        </strategy>
+        <hidden>true</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="[HasLayer1Link : (layer1Interfaces:Layer1Interface2, layer1Link:Layer1Link1)]::source::rolename"
+        sizeCalculated="true" type="rolename" userDefined="false" visible="false">
+        <name>layer1Interfaces</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <attached>[HasLayer1Link : (layer1Interfaces:Layer1Interface2, layer1Link:Layer1Link1)]::WayPoint::0</attached>
+          <offset_x>8</offset_x>
+          <offset_y>8</offset_y>
+          <placement>TOP</placement>
+        </strategy>
+        <hidden>true</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="[HasLayer1Link : (layer1Interfaces:Layer1Interface2, layer1Link:Layer1Link1)]::target::rolename"
+        sizeCalculated="true" type="rolename" userDefined="false" visible="false">
+        <name>layer1Link</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <attached>[HasLayer1Link : (layer1Interfaces:Layer1Interface2, layer1Link:Layer1Link1)]::WayPoint::1</attached>
+          <offset_x>8</offset_x>
+          <offset_y>8</offset_y>
+          <placement>TOP</placement>
+        </strategy>
+        <hidden>true</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="[HasLayer1Link : (layer1Interfaces:Layer1Interface2, layer1Link:Layer1Link1)]::target::multiplicity"
+        sizeCalculated="true" type="multiplicity" userDefined="false" visible="false">
+        <name>0..1</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <attached>[HasLayer1Link : (layer1Interfaces:Layer1Interface2, layer1Link:Layer1Link1)]::WayPoint::1</attached>
+          <offset_x>8</offset_x>
+          <offset_y>8</offset_y>
+          <placement>BOTTOM</placement>
+        </strategy>
+        <hidden>true</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="[HasLayer1Link : (layer1Interfaces:Layer1Interface2, layer1Link:Layer1Link1)]::AssociationName"
+        sizeCalculated="true" type="associationName" userDefined="false" visible="false">
+        <name>HasLayer1Link</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyInBetween">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <offsetX>0.0</offsetX>
+          <offsetY>-10.0</offsetY>
+          <related length="2">
+            <related0>[HasLayer1Link : (layer1Interfaces:Layer1Interface2, layer1Link:Layer1Link1)]::WayPoint::0</related0>
+            <related1>[HasLayer1Link : (layer1Interfaces:Layer1Interface2, layer1Link:Layer1Link1)]::WayPoint::1</related1>
+          </related>
+        </strategy>
+        <hidden>true</hidden>
+      </edgeproperty>
+    </properties>
+    <waypoints>
+      <edgeproperty
+        id="[HasLayer1Link : (layer1Interfaces:Layer1Interface2, layer1Link:Layer1Link1)]::WayPoint::0"
+        sizeCalculated="true" type="WayPoint" userDefined="false" visible="true">
+        <name>0</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyAttachedIntersection">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+        </strategy>
+        <id>0</id>
+        <specialid>1</specialid>
+        <hidden>false</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="[HasLayer1Link : (layer1Interfaces:Layer1Interface2, layer1Link:Layer1Link1)]::WayPoint::1"
+        sizeCalculated="true" type="WayPoint" userDefined="false" visible="true">
+        <name>1</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyAttachedIntersection">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+        </strategy>
+        <id>1</id>
+        <specialid>2</specialid>
+        <hidden>false</hidden>
+      </edgeproperty>
+    </waypoints>
+    <hidden>false</hidden>
+    <linkValue>[HasLayer1Link : (layer1Interfaces:Layer1Interface2, layer1Link:Layer1Link1)]</linkValue>
+  </edge>
+  <edge type="BinaryEdge">
+    <source>NetworkComponent1</source>
+    <target>Layer1Interface1</target>
+    <name>HasInterfaces</name>
+    <properties>
+      <edgeproperty
+        id="[HasInterfaces : (interfaces:Layer1Interface1, networkComponents:NetworkComponent1)]::source::multiplicity"
+        sizeCalculated="true" type="multiplicity" userDefined="false" visible="false">
+        <name>1..3</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <attached>[HasInterfaces : (interfaces:Layer1Interface1, networkComponents:NetworkComponent1)]::WayPoint::0</attached>
+          <offset_x>8</offset_x>
+          <offset_y>8</offset_y>
+          <placement>BOTTOM</placement>
+        </strategy>
+        <hidden>true</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="[HasInterfaces : (interfaces:Layer1Interface1, networkComponents:NetworkComponent1)]::source::rolename"
+        sizeCalculated="true" type="rolename" userDefined="false" visible="false">
+        <name>networkComponents</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <attached>[HasInterfaces : (interfaces:Layer1Interface1, networkComponents:NetworkComponent1)]::WayPoint::0</attached>
+          <offset_x>8</offset_x>
+          <offset_y>8</offset_y>
+          <placement>TOP</placement>
+        </strategy>
+        <hidden>true</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="[HasInterfaces : (interfaces:Layer1Interface1, networkComponents:NetworkComponent1)]::target::multiplicity"
+        sizeCalculated="true" type="multiplicity" userDefined="false" visible="false">
+        <name>*</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <attached>[HasInterfaces : (interfaces:Layer1Interface1, networkComponents:NetworkComponent1)]::WayPoint::1</attached>
+          <offset_x>8</offset_x>
+          <offset_y>8</offset_y>
+          <placement>BOTTOM</placement>
+        </strategy>
+        <hidden>true</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="[HasInterfaces : (interfaces:Layer1Interface1, networkComponents:NetworkComponent1)]::target::rolename"
+        sizeCalculated="true" type="rolename" userDefined="false" visible="false">
+        <name>interfaces</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <attached>[HasInterfaces : (interfaces:Layer1Interface1, networkComponents:NetworkComponent1)]::WayPoint::1</attached>
+          <offset_x>8</offset_x>
+          <offset_y>8</offset_y>
+          <placement>TOP</placement>
+        </strategy>
+        <hidden>true</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="[HasInterfaces : (interfaces:Layer1Interface1, networkComponents:NetworkComponent1)]::AssociationName"
+        sizeCalculated="true" type="associationName" userDefined="false" visible="false">
+        <name>HasInterfaces</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyInBetween">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <offsetX>0.0</offsetX>
+          <offsetY>-10.0</offsetY>
+          <related length="2">
+            <related0>[HasInterfaces : (interfaces:Layer1Interface1, networkComponents:NetworkComponent1)]::WayPoint::0</related0>
+            <related1>[HasInterfaces : (interfaces:Layer1Interface1, networkComponents:NetworkComponent1)]::WayPoint::1</related1>
+          </related>
+        </strategy>
+        <hidden>true</hidden>
+      </edgeproperty>
+    </properties>
+    <waypoints>
+      <edgeproperty
+        id="[HasInterfaces : (interfaces:Layer1Interface1, networkComponents:NetworkComponent1)]::WayPoint::0"
+        sizeCalculated="true" type="WayPoint" userDefined="false" visible="true">
+        <name>0</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyAttachedIntersection">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+        </strategy>
+        <id>0</id>
+        <specialid>1</specialid>
+        <hidden>false</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="[HasInterfaces : (interfaces:Layer1Interface1, networkComponents:NetworkComponent1)]::WayPoint::1"
+        sizeCalculated="true" type="WayPoint" userDefined="false" visible="true">
+        <name>1</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyAttachedIntersection">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+        </strategy>
+        <id>1</id>
+        <specialid>2</specialid>
+        <hidden>false</hidden>
+      </edgeproperty>
+    </waypoints>
+    <hidden>false</hidden>
+    <linkValue>[HasInterfaces : (interfaces:Layer1Interface1, networkComponents:NetworkComponent1)]</linkValue>
+  </edge>
+  <edge type="BinaryEdge">
+    <source>AccessInterface3</source>
+    <target>Layer1Interface4</target>
+    <name>DependsOnLayer1Interface</name>
+    <properties>
+      <edgeproperty
+        id="[DependsOnLayer1Interface : (layer1Interface:Layer1Interface4, layer2Interfaces:AccessInterface3)]::source::multiplicity"
+        sizeCalculated="true" type="multiplicity" userDefined="false" visible="false">
+        <name>*</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <attached>[DependsOnLayer1Interface : (layer1Interface:Layer1Interface4, layer2Interfaces:AccessInterface3)]::WayPoint::0</attached>
+          <offset_x>8</offset_x>
+          <offset_y>8</offset_y>
+          <placement>BOTTOM</placement>
+        </strategy>
+        <hidden>true</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="[DependsOnLayer1Interface : (layer1Interface:Layer1Interface4, layer2Interfaces:AccessInterface3)]::source::rolename"
+        sizeCalculated="true" type="rolename" userDefined="false" visible="false">
+        <name>layer2Interfaces</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <attached>[DependsOnLayer1Interface : (layer1Interface:Layer1Interface4, layer2Interfaces:AccessInterface3)]::WayPoint::0</attached>
+          <offset_x>8</offset_x>
+          <offset_y>8</offset_y>
+          <placement>TOP</placement>
+        </strategy>
+        <hidden>true</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="[DependsOnLayer1Interface : (layer1Interface:Layer1Interface4, layer2Interfaces:AccessInterface3)]::target::multiplicity"
+        sizeCalculated="true" type="multiplicity" userDefined="false" visible="false">
+        <name>0..1</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <attached>[DependsOnLayer1Interface : (layer1Interface:Layer1Interface4, layer2Interfaces:AccessInterface3)]::WayPoint::1</attached>
+          <offset_x>8</offset_x>
+          <offset_y>8</offset_y>
+          <placement>BOTTOM</placement>
+        </strategy>
+        <hidden>true</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="[DependsOnLayer1Interface : (layer1Interface:Layer1Interface4, layer2Interfaces:AccessInterface3)]::target::rolename"
+        sizeCalculated="true" type="rolename" userDefined="false" visible="false">
+        <name>layer1Interface</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <attached>[DependsOnLayer1Interface : (layer1Interface:Layer1Interface4, layer2Interfaces:AccessInterface3)]::WayPoint::1</attached>
+          <offset_x>8</offset_x>
+          <offset_y>8</offset_y>
+          <placement>TOP</placement>
+        </strategy>
+        <hidden>true</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="[DependsOnLayer1Interface : (layer1Interface:Layer1Interface4, layer2Interfaces:AccessInterface3)]::AssociationName"
+        sizeCalculated="true" type="associationName" userDefined="false" visible="false">
+        <name>DependsOnLayer1Interface</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyInBetween">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <offsetX>0.0</offsetX>
+          <offsetY>-10.0</offsetY>
+          <related length="2">
+            <related0>[DependsOnLayer1Interface : (layer1Interface:Layer1Interface4, layer2Interfaces:AccessInterface3)]::WayPoint::0</related0>
+            <related1>[DependsOnLayer1Interface : (layer1Interface:Layer1Interface4, layer2Interfaces:AccessInterface3)]::WayPoint::1</related1>
+          </related>
+        </strategy>
+        <hidden>true</hidden>
+      </edgeproperty>
+    </properties>
+    <waypoints>
+      <edgeproperty
+        id="[DependsOnLayer1Interface : (layer1Interface:Layer1Interface4, layer2Interfaces:AccessInterface3)]::WayPoint::0"
+        sizeCalculated="true" type="WayPoint" userDefined="false" visible="true">
+        <name>0</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyAttachedIntersection">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+        </strategy>
+        <id>0</id>
+        <specialid>1</specialid>
+        <hidden>false</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="[DependsOnLayer1Interface : (layer1Interface:Layer1Interface4, layer2Interfaces:AccessInterface3)]::WayPoint::1"
+        sizeCalculated="true" type="WayPoint" userDefined="false" visible="true">
+        <name>1</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyAttachedIntersection">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+        </strategy>
+        <id>1</id>
+        <specialid>2</specialid>
+        <hidden>false</hidden>
+      </edgeproperty>
+    </waypoints>
+    <hidden>false</hidden>
+    <linkValue>[DependsOnLayer1Interface : (layer1Interface:Layer1Interface4, layer2Interfaces:AccessInterface3)]</linkValue>
+  </edge>
+  <edge type="BinaryEdge">
+    <source>NetworkComponent1</source>
+    <target>AccessInterface1</target>
+    <name>HasInterfaces</name>
+    <properties>
+      <edgeproperty
+        id="[HasInterfaces : (interfaces:AccessInterface1, networkComponents:NetworkComponent1)]::source::rolename"
+        sizeCalculated="true" type="rolename" userDefined="false" visible="false">
+        <name>networkComponents</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <attached>[HasInterfaces : (interfaces:AccessInterface1, networkComponents:NetworkComponent1)]::WayPoint::0</attached>
+          <offset_x>8</offset_x>
+          <offset_y>8</offset_y>
+          <placement>TOP</placement>
+        </strategy>
+        <hidden>true</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="[HasInterfaces : (interfaces:AccessInterface1, networkComponents:NetworkComponent1)]::source::multiplicity"
+        sizeCalculated="true" type="multiplicity" userDefined="false" visible="false">
+        <name>1..3</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <attached>[HasInterfaces : (interfaces:AccessInterface1, networkComponents:NetworkComponent1)]::WayPoint::0</attached>
+          <offset_x>8</offset_x>
+          <offset_y>8</offset_y>
+          <placement>BOTTOM</placement>
+        </strategy>
+        <hidden>true</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="[HasInterfaces : (interfaces:AccessInterface1, networkComponents:NetworkComponent1)]::target::rolename"
+        sizeCalculated="true" type="rolename" userDefined="false" visible="false">
+        <name>interfaces</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <attached>[HasInterfaces : (interfaces:AccessInterface1, networkComponents:NetworkComponent1)]::WayPoint::1</attached>
+          <offset_x>8</offset_x>
+          <offset_y>8</offset_y>
+          <placement>TOP</placement>
+        </strategy>
+        <hidden>true</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="[HasInterfaces : (interfaces:AccessInterface1, networkComponents:NetworkComponent1)]::target::multiplicity"
+        sizeCalculated="true" type="multiplicity" userDefined="false" visible="false">
+        <name>*</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <attached>[HasInterfaces : (interfaces:AccessInterface1, networkComponents:NetworkComponent1)]::WayPoint::1</attached>
+          <offset_x>8</offset_x>
+          <offset_y>8</offset_y>
+          <placement>BOTTOM</placement>
+        </strategy>
+        <hidden>true</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="[HasInterfaces : (interfaces:AccessInterface1, networkComponents:NetworkComponent1)]::AssociationName"
+        sizeCalculated="true" type="associationName" userDefined="false" visible="false">
+        <name>HasInterfaces</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyInBetween">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <offsetX>0.0</offsetX>
+          <offsetY>-10.0</offsetY>
+          <related length="2">
+            <related0>[HasInterfaces : (interfaces:AccessInterface1, networkComponents:NetworkComponent1)]::WayPoint::0</related0>
+            <related1>[HasInterfaces : (interfaces:AccessInterface1, networkComponents:NetworkComponent1)]::WayPoint::1</related1>
+          </related>
+        </strategy>
+        <hidden>true</hidden>
+      </edgeproperty>
+    </properties>
+    <waypoints>
+      <edgeproperty
+        id="[HasInterfaces : (interfaces:AccessInterface1, networkComponents:NetworkComponent1)]::WayPoint::0"
+        sizeCalculated="true" type="WayPoint" userDefined="false" visible="true">
+        <name>0</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyAttachedIntersection">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+        </strategy>
+        <id>0</id>
+        <specialid>1</specialid>
+        <hidden>false</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="[HasInterfaces : (interfaces:AccessInterface1, networkComponents:NetworkComponent1)]::WayPoint::1"
+        sizeCalculated="true" type="WayPoint" userDefined="false" visible="true">
+        <name>1</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyAttachedIntersection">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+        </strategy>
+        <id>1</id>
+        <specialid>2</specialid>
+        <hidden>false</hidden>
+      </edgeproperty>
+    </waypoints>
+    <hidden>false</hidden>
+    <linkValue>[HasInterfaces : (interfaces:AccessInterface1, networkComponents:NetworkComponent1)]</linkValue>
+  </edge>
+  <edge type="BinaryEdge">
+    <source>AccessInterface5</source>
+    <target>AccessInterface1</target>
+    <name>HasAggregationLayer2Interfaces</name>
+    <properties>
+      <edgeproperty
+        id="[HasAggregationLayer2Interfaces : (aggregationInterfaces:AccessInterface1, aggregatorInterface:AccessInterface5)]::source::rolename"
+        sizeCalculated="true" type="rolename" userDefined="false" visible="false">
+        <name>aggregatorInterface</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <attached>[HasAggregationLayer2Interfaces : (aggregationInterfaces:AccessInterface1, aggregatorInterface:AccessInterface5)]::WayPoint::0</attached>
+          <offset_x>8</offset_x>
+          <offset_y>8</offset_y>
+          <placement>TOP</placement>
+        </strategy>
+        <hidden>true</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="[HasAggregationLayer2Interfaces : (aggregationInterfaces:AccessInterface1, aggregatorInterface:AccessInterface5)]::source::multiplicity"
+        sizeCalculated="true" type="multiplicity" userDefined="false" visible="false">
+        <name>0..1</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <attached>[HasAggregationLayer2Interfaces : (aggregationInterfaces:AccessInterface1, aggregatorInterface:AccessInterface5)]::WayPoint::0</attached>
+          <offset_x>8</offset_x>
+          <offset_y>8</offset_y>
+          <placement>BOTTOM</placement>
+        </strategy>
+        <hidden>true</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="[HasAggregationLayer2Interfaces : (aggregationInterfaces:AccessInterface1, aggregatorInterface:AccessInterface5)]::target::rolename"
+        sizeCalculated="true" type="rolename" userDefined="false" visible="false">
+        <name>aggregationInterfaces</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <attached>[HasAggregationLayer2Interfaces : (aggregationInterfaces:AccessInterface1, aggregatorInterface:AccessInterface5)]::WayPoint::1</attached>
+          <offset_x>8</offset_x>
+          <offset_y>8</offset_y>
+          <placement>TOP</placement>
+        </strategy>
+        <hidden>true</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="[HasAggregationLayer2Interfaces : (aggregationInterfaces:AccessInterface1, aggregatorInterface:AccessInterface5)]::target::multiplicity"
+        sizeCalculated="true" type="multiplicity" userDefined="false" visible="false">
+        <name>*</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <attached>[HasAggregationLayer2Interfaces : (aggregationInterfaces:AccessInterface1, aggregatorInterface:AccessInterface5)]::WayPoint::1</attached>
+          <offset_x>8</offset_x>
+          <offset_y>8</offset_y>
+          <placement>BOTTOM</placement>
+        </strategy>
+        <hidden>true</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="[HasAggregationLayer2Interfaces : (aggregationInterfaces:AccessInterface1, aggregatorInterface:AccessInterface5)]::AssociationName"
+        sizeCalculated="true" type="associationName" userDefined="false" visible="false">
+        <name>HasAggregationLayer2Interfaces</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyInBetween">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <offsetX>0.0</offsetX>
+          <offsetY>-10.0</offsetY>
+          <related length="2">
+            <related0>[HasAggregationLayer2Interfaces : (aggregationInterfaces:AccessInterface1, aggregatorInterface:AccessInterface5)]::WayPoint::0</related0>
+            <related1>[HasAggregationLayer2Interfaces : (aggregationInterfaces:AccessInterface1, aggregatorInterface:AccessInterface5)]::WayPoint::1</related1>
+          </related>
+        </strategy>
+        <hidden>true</hidden>
+      </edgeproperty>
+    </properties>
+    <waypoints>
+      <edgeproperty
+        id="[HasAggregationLayer2Interfaces : (aggregationInterfaces:AccessInterface1, aggregatorInterface:AccessInterface5)]::WayPoint::0"
+        sizeCalculated="true" type="WayPoint" userDefined="false" visible="true">
+        <name>0</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyAttachedIntersection">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+        </strategy>
+        <id>0</id>
+        <specialid>1</specialid>
+        <hidden>false</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="[HasAggregationLayer2Interfaces : (aggregationInterfaces:AccessInterface1, aggregatorInterface:AccessInterface5)]::WayPoint::1"
+        sizeCalculated="true" type="WayPoint" userDefined="false" visible="true">
+        <name>1</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyAttachedIntersection">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+        </strategy>
+        <id>1</id>
+        <specialid>2</specialid>
+        <hidden>false</hidden>
+      </edgeproperty>
+    </waypoints>
+    <hidden>false</hidden>
+    <linkValue>[HasAggregationLayer2Interfaces : (aggregationInterfaces:AccessInterface1, aggregatorInterface:AccessInterface5)]</linkValue>
+  </edge>
+  <node id="AccessInterface2" sizeCalculated="true" type="Object">
+    <name>AccessInterface2</name>
+    <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyFixed">
+      <x>882.0</x>
+      <y>122.0</y>
+    </strategy>
+    <hidden>false</hidden>
+  </node>
+  <node id="AccessInterface4" sizeCalculated="true" type="Object">
+    <name>AccessInterface4</name>
+    <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyFixed">
+      <x>884.0</x>
+      <y>490.0</y>
+    </strategy>
+    <hidden>false</hidden>
+  </node>
+  <edge type="BinaryEdge">
+    <source>NetworkComponent2</source>
+    <target>NetworkComponent1</target>
+    <name>D_Layer1Connection</name>
+    <properties>
+      <edgeproperty
+        id="virtual[D_Layer1Connection : (derivedDestinationNetworkComponents:NetworkComponent1, derivedSourceNetworkComponents:NetworkComponent2)]::source::rolename"
+        sizeCalculated="true" type="rolename" userDefined="false" visible="true">
+        <name>derivedSourceNetworkComponents</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <attached>virtual[D_Layer1Connection : (derivedDestinationNetworkComponents:NetworkComponent1, derivedSourceNetworkComponents:NetworkComponent2)]::WayPoint::0</attached>
+          <offset_x>8</offset_x>
+          <offset_y>8</offset_y>
+          <placement>TOP</placement>
+        </strategy>
+        <hidden>false</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="virtual[D_Layer1Connection : (derivedDestinationNetworkComponents:NetworkComponent1, derivedSourceNetworkComponents:NetworkComponent2)]::source::multiplicity"
+        sizeCalculated="true" type="multiplicity" userDefined="false" visible="true">
+        <name>*</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <attached>virtual[D_Layer1Connection : (derivedDestinationNetworkComponents:NetworkComponent1, derivedSourceNetworkComponents:NetworkComponent2)]::WayPoint::0</attached>
+          <offset_x>8</offset_x>
+          <offset_y>8</offset_y>
+          <placement>BOTTOM</placement>
+        </strategy>
+        <hidden>false</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="virtual[D_Layer1Connection : (derivedDestinationNetworkComponents:NetworkComponent1, derivedSourceNetworkComponents:NetworkComponent2)]::target::rolename"
+        sizeCalculated="true" type="rolename" userDefined="false" visible="true">
+        <name>/derivedDestinationNetworkComponents</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <attached>virtual[D_Layer1Connection : (derivedDestinationNetworkComponents:NetworkComponent1, derivedSourceNetworkComponents:NetworkComponent2)]::WayPoint::1</attached>
+          <offset_x>8</offset_x>
+          <offset_y>8</offset_y>
+          <placement>TOP</placement>
+        </strategy>
+        <hidden>false</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="virtual[D_Layer1Connection : (derivedDestinationNetworkComponents:NetworkComponent1, derivedSourceNetworkComponents:NetworkComponent2)]::target::multiplicity"
+        sizeCalculated="true" type="multiplicity" userDefined="false" visible="true">
+        <name>*</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <attached>virtual[D_Layer1Connection : (derivedDestinationNetworkComponents:NetworkComponent1, derivedSourceNetworkComponents:NetworkComponent2)]::WayPoint::1</attached>
+          <offset_x>8</offset_x>
+          <offset_y>8</offset_y>
+          <placement>BOTTOM</placement>
+        </strategy>
+        <hidden>false</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="virtual[D_Layer1Connection : (derivedDestinationNetworkComponents:NetworkComponent1, derivedSourceNetworkComponents:NetworkComponent2)]::AssociationName"
+        sizeCalculated="true" type="associationName" userDefined="false" visible="true">
+        <name>D_Layer1Connection</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyInBetween">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <offsetX>0.0</offsetX>
+          <offsetY>-10.0</offsetY>
+          <related length="2">
+            <related0>virtual[D_Layer1Connection : (derivedDestinationNetworkComponents:NetworkComponent1, derivedSourceNetworkComponents:NetworkComponent2)]::WayPoint::0</related0>
+            <related1>virtual[D_Layer1Connection : (derivedDestinationNetworkComponents:NetworkComponent1, derivedSourceNetworkComponents:NetworkComponent2)]::WayPoint::1</related1>
+          </related>
+        </strategy>
+        <hidden>false</hidden>
+      </edgeproperty>
+    </properties>
+    <waypoints>
+      <edgeproperty
+        id="virtual[D_Layer1Connection : (derivedDestinationNetworkComponents:NetworkComponent1, derivedSourceNetworkComponents:NetworkComponent2)]::WayPoint::0"
+        sizeCalculated="true" type="WayPoint" userDefined="false" visible="true">
+        <name>0</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyAttachedIntersection">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+        </strategy>
+        <id>0</id>
+        <specialid>1</specialid>
+        <hidden>false</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="virtual[D_Layer1Connection : (derivedDestinationNetworkComponents:NetworkComponent1, derivedSourceNetworkComponents:NetworkComponent2)]::WayPoint::1"
+        sizeCalculated="true" type="WayPoint" userDefined="false" visible="true">
+        <name>1</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyAttachedIntersection">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+        </strategy>
+        <id>1</id>
+        <specialid>2</specialid>
+        <hidden>false</hidden>
+      </edgeproperty>
+    </waypoints>
+    <hidden>true</hidden>
+    <linkValue>virtual[D_Layer1Connection : (derivedDestinationNetworkComponents:NetworkComponent1, derivedSourceNetworkComponents:NetworkComponent2)]</linkValue>
+  </edge>
+  <edge type="BinaryEdge">
+    <source>NetworkComponent1</source>
+    <target>NetworkComponent2</target>
+    <name>D_Layer1Connection</name>
+    <properties>
+      <edgeproperty
+        id="virtual[D_Layer1Connection : (derivedDestinationNetworkComponents:NetworkComponent2, derivedSourceNetworkComponents:NetworkComponent1)]::source::rolename"
+        sizeCalculated="true" type="rolename" userDefined="false" visible="true">
+        <name>derivedSourceNetworkComponents</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <attached>virtual[D_Layer1Connection : (derivedDestinationNetworkComponents:NetworkComponent2, derivedSourceNetworkComponents:NetworkComponent1)]::WayPoint::0</attached>
+          <offset_x>8</offset_x>
+          <offset_y>8</offset_y>
+          <placement>TOP</placement>
+        </strategy>
+        <hidden>false</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="virtual[D_Layer1Connection : (derivedDestinationNetworkComponents:NetworkComponent2, derivedSourceNetworkComponents:NetworkComponent1)]::source::multiplicity"
+        sizeCalculated="true" type="multiplicity" userDefined="false" visible="true">
+        <name>*</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <attached>virtual[D_Layer1Connection : (derivedDestinationNetworkComponents:NetworkComponent2, derivedSourceNetworkComponents:NetworkComponent1)]::WayPoint::0</attached>
+          <offset_x>8</offset_x>
+          <offset_y>8</offset_y>
+          <placement>BOTTOM</placement>
+        </strategy>
+        <hidden>false</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="virtual[D_Layer1Connection : (derivedDestinationNetworkComponents:NetworkComponent2, derivedSourceNetworkComponents:NetworkComponent1)]::target::rolename"
+        sizeCalculated="true" type="rolename" userDefined="false" visible="true">
+        <name>/derivedDestinationNetworkComponents</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <attached>virtual[D_Layer1Connection : (derivedDestinationNetworkComponents:NetworkComponent2, derivedSourceNetworkComponents:NetworkComponent1)]::WayPoint::1</attached>
+          <offset_x>8</offset_x>
+          <offset_y>8</offset_y>
+          <placement>TOP</placement>
+        </strategy>
+        <hidden>false</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="virtual[D_Layer1Connection : (derivedDestinationNetworkComponents:NetworkComponent2, derivedSourceNetworkComponents:NetworkComponent1)]::target::multiplicity"
+        sizeCalculated="true" type="multiplicity" userDefined="false" visible="true">
+        <name>*</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <attached>virtual[D_Layer1Connection : (derivedDestinationNetworkComponents:NetworkComponent2, derivedSourceNetworkComponents:NetworkComponent1)]::WayPoint::1</attached>
+          <offset_x>8</offset_x>
+          <offset_y>8</offset_y>
+          <placement>BOTTOM</placement>
+        </strategy>
+        <hidden>false</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="virtual[D_Layer1Connection : (derivedDestinationNetworkComponents:NetworkComponent2, derivedSourceNetworkComponents:NetworkComponent1)]::AssociationName"
+        sizeCalculated="true" type="associationName" userDefined="false" visible="true">
+        <name>D_Layer1Connection</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyInBetween">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <offsetX>0.0</offsetX>
+          <offsetY>-10.0</offsetY>
+          <related length="2">
+            <related0>virtual[D_Layer1Connection : (derivedDestinationNetworkComponents:NetworkComponent2, derivedSourceNetworkComponents:NetworkComponent1)]::WayPoint::0</related0>
+            <related1>virtual[D_Layer1Connection : (derivedDestinationNetworkComponents:NetworkComponent2, derivedSourceNetworkComponents:NetworkComponent1)]::WayPoint::1</related1>
+          </related>
+        </strategy>
+        <hidden>false</hidden>
+      </edgeproperty>
+    </properties>
+    <waypoints>
+      <edgeproperty
+        id="virtual[D_Layer1Connection : (derivedDestinationNetworkComponents:NetworkComponent2, derivedSourceNetworkComponents:NetworkComponent1)]::WayPoint::0"
+        sizeCalculated="true" type="WayPoint" userDefined="false" visible="true">
+        <name>0</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyAttachedIntersection">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+        </strategy>
+        <id>0</id>
+        <specialid>1</specialid>
+        <hidden>false</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="virtual[D_Layer1Connection : (derivedDestinationNetworkComponents:NetworkComponent2, derivedSourceNetworkComponents:NetworkComponent1)]::WayPoint::1"
+        sizeCalculated="true" type="WayPoint" userDefined="false" visible="true">
+        <name>1</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyAttachedIntersection">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+        </strategy>
+        <id>1</id>
+        <specialid>2</specialid>
+        <hidden>false</hidden>
+      </edgeproperty>
+    </waypoints>
+    <hidden>true</hidden>
+    <linkValue>virtual[D_Layer1Connection : (derivedDestinationNetworkComponents:NetworkComponent2, derivedSourceNetworkComponents:NetworkComponent1)]</linkValue>
+  </edge>
+  <edge type="BinaryEdge">
+    <source>AccessInterface2</source>
+    <target>Layer1Interface2</target>
+    <name>DependsOnLayer1Interface</name>
+    <properties>
+      <edgeproperty
+        id="[DependsOnLayer1Interface : (layer1Interface:Layer1Interface2, layer2Interfaces:AccessInterface2)]::source::rolename"
+        sizeCalculated="true" type="rolename" userDefined="false" visible="true">
+        <name>layer2Interfaces</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <attached>[DependsOnLayer1Interface : (layer1Interface:Layer1Interface2, layer2Interfaces:AccessInterface2)]::WayPoint::0</attached>
+          <offset_x>8</offset_x>
+          <offset_y>8</offset_y>
+          <placement>TOP</placement>
+        </strategy>
+        <hidden>false</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="[DependsOnLayer1Interface : (layer1Interface:Layer1Interface2, layer2Interfaces:AccessInterface2)]::source::multiplicity"
+        sizeCalculated="true" type="multiplicity" userDefined="false" visible="true">
+        <name>*</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <attached>[DependsOnLayer1Interface : (layer1Interface:Layer1Interface2, layer2Interfaces:AccessInterface2)]::WayPoint::0</attached>
+          <offset_x>8</offset_x>
+          <offset_y>8</offset_y>
+          <placement>BOTTOM</placement>
+        </strategy>
+        <hidden>false</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="[DependsOnLayer1Interface : (layer1Interface:Layer1Interface2, layer2Interfaces:AccessInterface2)]::target::rolename"
+        sizeCalculated="true" type="rolename" userDefined="false" visible="true">
+        <name>layer1Interface</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <attached>[DependsOnLayer1Interface : (layer1Interface:Layer1Interface2, layer2Interfaces:AccessInterface2)]::WayPoint::1</attached>
+          <offset_x>8</offset_x>
+          <offset_y>8</offset_y>
+          <placement>TOP</placement>
+        </strategy>
+        <hidden>false</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="[DependsOnLayer1Interface : (layer1Interface:Layer1Interface2, layer2Interfaces:AccessInterface2)]::target::multiplicity"
+        sizeCalculated="true" type="multiplicity" userDefined="false" visible="true">
+        <name>0..1</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <attached>[DependsOnLayer1Interface : (layer1Interface:Layer1Interface2, layer2Interfaces:AccessInterface2)]::WayPoint::1</attached>
+          <offset_x>8</offset_x>
+          <offset_y>8</offset_y>
+          <placement>BOTTOM</placement>
+        </strategy>
+        <hidden>false</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="[DependsOnLayer1Interface : (layer1Interface:Layer1Interface2, layer2Interfaces:AccessInterface2)]::AssociationName"
+        sizeCalculated="true" type="associationName" userDefined="false" visible="true">
+        <name>DependsOnLayer1Interface</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyInBetween">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <offsetX>0.0</offsetX>
+          <offsetY>-10.0</offsetY>
+          <related length="2">
+            <related0>[DependsOnLayer1Interface : (layer1Interface:Layer1Interface2, layer2Interfaces:AccessInterface2)]::WayPoint::0</related0>
+            <related1>[DependsOnLayer1Interface : (layer1Interface:Layer1Interface2, layer2Interfaces:AccessInterface2)]::WayPoint::1</related1>
+          </related>
+        </strategy>
+        <hidden>false</hidden>
+      </edgeproperty>
+    </properties>
+    <waypoints>
+      <edgeproperty
+        id="[DependsOnLayer1Interface : (layer1Interface:Layer1Interface2, layer2Interfaces:AccessInterface2)]::WayPoint::0"
+        sizeCalculated="true" type="WayPoint" userDefined="false" visible="true">
+        <name>0</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyAttachedIntersection">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+        </strategy>
+        <id>0</id>
+        <specialid>1</specialid>
+        <hidden>false</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="[DependsOnLayer1Interface : (layer1Interface:Layer1Interface2, layer2Interfaces:AccessInterface2)]::WayPoint::1"
+        sizeCalculated="true" type="WayPoint" userDefined="false" visible="true">
+        <name>1</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyAttachedIntersection">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+        </strategy>
+        <id>1</id>
+        <specialid>2</specialid>
+        <hidden>false</hidden>
+      </edgeproperty>
+    </waypoints>
+    <hidden>true</hidden>
+    <linkValue>[DependsOnLayer1Interface : (layer1Interface:Layer1Interface2, layer2Interfaces:AccessInterface2)]</linkValue>
+  </edge>
+  <edge type="BinaryEdge">
+    <source>NetworkComponent2</source>
+    <target>AccessInterface2</target>
+    <name>HasInterfaces</name>
+    <properties>
+      <edgeproperty
+        id="[HasInterfaces : (interfaces:AccessInterface2, networkComponents:NetworkComponent2)]::source::multiplicity"
+        sizeCalculated="true" type="multiplicity" userDefined="false" visible="true">
+        <name>1..3</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <attached>[HasInterfaces : (interfaces:AccessInterface2, networkComponents:NetworkComponent2)]::WayPoint::0</attached>
+          <offset_x>8</offset_x>
+          <offset_y>8</offset_y>
+          <placement>BOTTOM</placement>
+        </strategy>
+        <hidden>false</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="[HasInterfaces : (interfaces:AccessInterface2, networkComponents:NetworkComponent2)]::source::rolename"
+        sizeCalculated="true" type="rolename" userDefined="false" visible="true">
+        <name>networkComponents</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <attached>[HasInterfaces : (interfaces:AccessInterface2, networkComponents:NetworkComponent2)]::WayPoint::0</attached>
+          <offset_x>8</offset_x>
+          <offset_y>8</offset_y>
+          <placement>TOP</placement>
+        </strategy>
+        <hidden>false</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="[HasInterfaces : (interfaces:AccessInterface2, networkComponents:NetworkComponent2)]::target::multiplicity"
+        sizeCalculated="true" type="multiplicity" userDefined="false" visible="true">
+        <name>*</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <attached>[HasInterfaces : (interfaces:AccessInterface2, networkComponents:NetworkComponent2)]::WayPoint::1</attached>
+          <offset_x>8</offset_x>
+          <offset_y>8</offset_y>
+          <placement>BOTTOM</placement>
+        </strategy>
+        <hidden>false</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="[HasInterfaces : (interfaces:AccessInterface2, networkComponents:NetworkComponent2)]::target::rolename"
+        sizeCalculated="true" type="rolename" userDefined="false" visible="true">
+        <name>interfaces</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <attached>[HasInterfaces : (interfaces:AccessInterface2, networkComponents:NetworkComponent2)]::WayPoint::1</attached>
+          <offset_x>8</offset_x>
+          <offset_y>8</offset_y>
+          <placement>TOP</placement>
+        </strategy>
+        <hidden>false</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="[HasInterfaces : (interfaces:AccessInterface2, networkComponents:NetworkComponent2)]::AssociationName"
+        sizeCalculated="true" type="associationName" userDefined="false" visible="true">
+        <name>HasInterfaces</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyInBetween">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <offsetX>0.0</offsetX>
+          <offsetY>-10.0</offsetY>
+          <related length="2">
+            <related0>[HasInterfaces : (interfaces:AccessInterface2, networkComponents:NetworkComponent2)]::WayPoint::0</related0>
+            <related1>[HasInterfaces : (interfaces:AccessInterface2, networkComponents:NetworkComponent2)]::WayPoint::1</related1>
+          </related>
+        </strategy>
+        <hidden>false</hidden>
+      </edgeproperty>
+    </properties>
+    <waypoints>
+      <edgeproperty
+        id="[HasInterfaces : (interfaces:AccessInterface2, networkComponents:NetworkComponent2)]::WayPoint::0"
+        sizeCalculated="true" type="WayPoint" userDefined="false" visible="true">
+        <name>0</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyAttachedIntersection">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+        </strategy>
+        <id>0</id>
+        <specialid>1</specialid>
+        <hidden>false</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="[HasInterfaces : (interfaces:AccessInterface2, networkComponents:NetworkComponent2)]::WayPoint::1"
+        sizeCalculated="true" type="WayPoint" userDefined="false" visible="true">
+        <name>1</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyAttachedIntersection">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+        </strategy>
+        <id>1</id>
+        <specialid>2</specialid>
+        <hidden>false</hidden>
+      </edgeproperty>
+    </waypoints>
+    <hidden>true</hidden>
+    <linkValue>[HasInterfaces : (interfaces:AccessInterface2, networkComponents:NetworkComponent2)]</linkValue>
+  </edge>
+  <edge type="BinaryEdge">
+    <source>AccessInterface5</source>
+    <target>Layer1Interface1</target>
+    <name>D_DependsOnLayer1Interface</name>
+    <properties>
+      <edgeproperty
+        id="virtual[D_DependsOnLayer1Interface : (derivedLayer1Interfaces:Layer1Interface1, derivedLayer2Interfaces:AccessInterface5)]::source::multiplicity"
+        sizeCalculated="true" type="multiplicity" userDefined="false" visible="true">
+        <name>*</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <attached>virtual[D_DependsOnLayer1Interface : (derivedLayer1Interfaces:Layer1Interface1, derivedLayer2Interfaces:AccessInterface5)]::WayPoint::0</attached>
+          <offset_x>8</offset_x>
+          <offset_y>8</offset_y>
+          <placement>BOTTOM</placement>
+        </strategy>
+        <hidden>false</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="virtual[D_DependsOnLayer1Interface : (derivedLayer1Interfaces:Layer1Interface1, derivedLayer2Interfaces:AccessInterface5)]::source::rolename"
+        sizeCalculated="true" type="rolename" userDefined="false" visible="true">
+        <name>derivedLayer2Interfaces</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <attached>virtual[D_DependsOnLayer1Interface : (derivedLayer1Interfaces:Layer1Interface1, derivedLayer2Interfaces:AccessInterface5)]::WayPoint::0</attached>
+          <offset_x>8</offset_x>
+          <offset_y>8</offset_y>
+          <placement>TOP</placement>
+        </strategy>
+        <hidden>false</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="virtual[D_DependsOnLayer1Interface : (derivedLayer1Interfaces:Layer1Interface1, derivedLayer2Interfaces:AccessInterface5)]::target::rolename"
+        sizeCalculated="true" type="rolename" userDefined="false" visible="true">
+        <name>/derivedLayer1Interfaces</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <attached>virtual[D_DependsOnLayer1Interface : (derivedLayer1Interfaces:Layer1Interface1, derivedLayer2Interfaces:AccessInterface5)]::WayPoint::1</attached>
+          <offset_x>8</offset_x>
+          <offset_y>8</offset_y>
+          <placement>TOP</placement>
+        </strategy>
+        <hidden>false</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="virtual[D_DependsOnLayer1Interface : (derivedLayer1Interfaces:Layer1Interface1, derivedLayer2Interfaces:AccessInterface5)]::target::multiplicity"
+        sizeCalculated="true" type="multiplicity" userDefined="false" visible="true">
+        <name>*</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <attached>virtual[D_DependsOnLayer1Interface : (derivedLayer1Interfaces:Layer1Interface1, derivedLayer2Interfaces:AccessInterface5)]::WayPoint::1</attached>
+          <offset_x>8</offset_x>
+          <offset_y>8</offset_y>
+          <placement>BOTTOM</placement>
+        </strategy>
+        <hidden>false</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="virtual[D_DependsOnLayer1Interface : (derivedLayer1Interfaces:Layer1Interface1, derivedLayer2Interfaces:AccessInterface5)]::AssociationName"
+        sizeCalculated="true" type="associationName" userDefined="false" visible="true">
+        <name>D_DependsOnLayer1Interface</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyInBetween">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <offsetX>0.0</offsetX>
+          <offsetY>-10.0</offsetY>
+          <related length="2">
+            <related0>virtual[D_DependsOnLayer1Interface : (derivedLayer1Interfaces:Layer1Interface1, derivedLayer2Interfaces:AccessInterface5)]::WayPoint::0</related0>
+            <related1>virtual[D_DependsOnLayer1Interface : (derivedLayer1Interfaces:Layer1Interface1, derivedLayer2Interfaces:AccessInterface5)]::WayPoint::1</related1>
+          </related>
+        </strategy>
+        <hidden>false</hidden>
+      </edgeproperty>
+    </properties>
+    <waypoints>
+      <edgeproperty
+        id="virtual[D_DependsOnLayer1Interface : (derivedLayer1Interfaces:Layer1Interface1, derivedLayer2Interfaces:AccessInterface5)]::WayPoint::0"
+        sizeCalculated="true" type="WayPoint" userDefined="false" visible="true">
+        <name>0</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyAttachedIntersection">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+        </strategy>
+        <id>0</id>
+        <specialid>1</specialid>
+        <hidden>false</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="virtual[D_DependsOnLayer1Interface : (derivedLayer1Interfaces:Layer1Interface1, derivedLayer2Interfaces:AccessInterface5)]::WayPoint::1"
+        sizeCalculated="true" type="WayPoint" userDefined="false" visible="true">
+        <name>1</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyAttachedIntersection">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+        </strategy>
+        <id>1</id>
+        <specialid>2</specialid>
+        <hidden>false</hidden>
+      </edgeproperty>
+    </waypoints>
+    <hidden>true</hidden>
+    <linkValue>virtual[D_DependsOnLayer1Interface : (derivedLayer1Interfaces:Layer1Interface1, derivedLayer2Interfaces:AccessInterface5)]</linkValue>
+  </edge>
+  <edge type="BinaryEdge">
+    <source>AccessInterface6</source>
+    <target>AccessInterface2</target>
+    <name>HasAggregationLayer2Interfaces</name>
+    <properties>
+      <edgeproperty
+        id="[HasAggregationLayer2Interfaces : (aggregationInterfaces:AccessInterface2, aggregatorInterface:AccessInterface6)]::source::multiplicity"
+        sizeCalculated="true" type="multiplicity" userDefined="false" visible="true">
+        <name>0..1</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <attached>[HasAggregationLayer2Interfaces : (aggregationInterfaces:AccessInterface2, aggregatorInterface:AccessInterface6)]::WayPoint::0</attached>
+          <offset_x>8</offset_x>
+          <offset_y>8</offset_y>
+          <placement>BOTTOM</placement>
+        </strategy>
+        <hidden>false</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="[HasAggregationLayer2Interfaces : (aggregationInterfaces:AccessInterface2, aggregatorInterface:AccessInterface6)]::source::rolename"
+        sizeCalculated="true" type="rolename" userDefined="false" visible="true">
+        <name>aggregatorInterface</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <attached>[HasAggregationLayer2Interfaces : (aggregationInterfaces:AccessInterface2, aggregatorInterface:AccessInterface6)]::WayPoint::0</attached>
+          <offset_x>8</offset_x>
+          <offset_y>8</offset_y>
+          <placement>TOP</placement>
+        </strategy>
+        <hidden>false</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="[HasAggregationLayer2Interfaces : (aggregationInterfaces:AccessInterface2, aggregatorInterface:AccessInterface6)]::target::rolename"
+        sizeCalculated="true" type="rolename" userDefined="false" visible="true">
+        <name>aggregationInterfaces</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <attached>[HasAggregationLayer2Interfaces : (aggregationInterfaces:AccessInterface2, aggregatorInterface:AccessInterface6)]::WayPoint::1</attached>
+          <offset_x>8</offset_x>
+          <offset_y>8</offset_y>
+          <placement>TOP</placement>
+        </strategy>
+        <hidden>false</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="[HasAggregationLayer2Interfaces : (aggregationInterfaces:AccessInterface2, aggregatorInterface:AccessInterface6)]::target::multiplicity"
+        sizeCalculated="true" type="multiplicity" userDefined="false" visible="true">
+        <name>*</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <attached>[HasAggregationLayer2Interfaces : (aggregationInterfaces:AccessInterface2, aggregatorInterface:AccessInterface6)]::WayPoint::1</attached>
+          <offset_x>8</offset_x>
+          <offset_y>8</offset_y>
+          <placement>BOTTOM</placement>
+        </strategy>
+        <hidden>false</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="[HasAggregationLayer2Interfaces : (aggregationInterfaces:AccessInterface2, aggregatorInterface:AccessInterface6)]::AssociationName"
+        sizeCalculated="true" type="associationName" userDefined="false" visible="true">
+        <name>HasAggregationLayer2Interfaces</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyInBetween">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <offsetX>0.0</offsetX>
+          <offsetY>-10.0</offsetY>
+          <related length="2">
+            <related0>[HasAggregationLayer2Interfaces : (aggregationInterfaces:AccessInterface2, aggregatorInterface:AccessInterface6)]::WayPoint::0</related0>
+            <related1>[HasAggregationLayer2Interfaces : (aggregationInterfaces:AccessInterface2, aggregatorInterface:AccessInterface6)]::WayPoint::1</related1>
+          </related>
+        </strategy>
+        <hidden>false</hidden>
+      </edgeproperty>
+    </properties>
+    <waypoints>
+      <edgeproperty
+        id="[HasAggregationLayer2Interfaces : (aggregationInterfaces:AccessInterface2, aggregatorInterface:AccessInterface6)]::WayPoint::0"
+        sizeCalculated="true" type="WayPoint" userDefined="false" visible="true">
+        <name>0</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyAttachedIntersection">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+        </strategy>
+        <id>0</id>
+        <specialid>1</specialid>
+        <hidden>false</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="[HasAggregationLayer2Interfaces : (aggregationInterfaces:AccessInterface2, aggregatorInterface:AccessInterface6)]::WayPoint::1"
+        sizeCalculated="true" type="WayPoint" userDefined="false" visible="true">
+        <name>1</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyAttachedIntersection">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+        </strategy>
+        <id>1</id>
+        <specialid>2</specialid>
+        <hidden>false</hidden>
+      </edgeproperty>
+    </waypoints>
+    <hidden>true</hidden>
+    <linkValue>[HasAggregationLayer2Interfaces : (aggregationInterfaces:AccessInterface2, aggregatorInterface:AccessInterface6)]</linkValue>
+  </edge>
+  <edge type="BinaryEdge">
+    <source>NetworkComponent2</source>
+    <target>AccessInterface4</target>
+    <name>HasInterfaces</name>
+    <properties>
+      <edgeproperty
+        id="[HasInterfaces : (interfaces:AccessInterface4, networkComponents:NetworkComponent2)]::source::multiplicity"
+        sizeCalculated="true" type="multiplicity" userDefined="false" visible="true">
+        <name>1..3</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <attached>[HasInterfaces : (interfaces:AccessInterface4, networkComponents:NetworkComponent2)]::WayPoint::0</attached>
+          <offset_x>8</offset_x>
+          <offset_y>8</offset_y>
+          <placement>BOTTOM</placement>
+        </strategy>
+        <hidden>false</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="[HasInterfaces : (interfaces:AccessInterface4, networkComponents:NetworkComponent2)]::source::rolename"
+        sizeCalculated="true" type="rolename" userDefined="false" visible="true">
+        <name>networkComponents</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <attached>[HasInterfaces : (interfaces:AccessInterface4, networkComponents:NetworkComponent2)]::WayPoint::0</attached>
+          <offset_x>8</offset_x>
+          <offset_y>8</offset_y>
+          <placement>TOP</placement>
+        </strategy>
+        <hidden>false</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="[HasInterfaces : (interfaces:AccessInterface4, networkComponents:NetworkComponent2)]::target::multiplicity"
+        sizeCalculated="true" type="multiplicity" userDefined="false" visible="true">
+        <name>*</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <attached>[HasInterfaces : (interfaces:AccessInterface4, networkComponents:NetworkComponent2)]::WayPoint::1</attached>
+          <offset_x>8</offset_x>
+          <offset_y>8</offset_y>
+          <placement>BOTTOM</placement>
+        </strategy>
+        <hidden>false</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="[HasInterfaces : (interfaces:AccessInterface4, networkComponents:NetworkComponent2)]::target::rolename"
+        sizeCalculated="true" type="rolename" userDefined="false" visible="true">
+        <name>interfaces</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <attached>[HasInterfaces : (interfaces:AccessInterface4, networkComponents:NetworkComponent2)]::WayPoint::1</attached>
+          <offset_x>8</offset_x>
+          <offset_y>8</offset_y>
+          <placement>TOP</placement>
+        </strategy>
+        <hidden>false</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="[HasInterfaces : (interfaces:AccessInterface4, networkComponents:NetworkComponent2)]::AssociationName"
+        sizeCalculated="true" type="associationName" userDefined="false" visible="true">
+        <name>HasInterfaces</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyInBetween">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <offsetX>0.0</offsetX>
+          <offsetY>-10.0</offsetY>
+          <related length="2">
+            <related0>[HasInterfaces : (interfaces:AccessInterface4, networkComponents:NetworkComponent2)]::WayPoint::0</related0>
+            <related1>[HasInterfaces : (interfaces:AccessInterface4, networkComponents:NetworkComponent2)]::WayPoint::1</related1>
+          </related>
+        </strategy>
+        <hidden>false</hidden>
+      </edgeproperty>
+    </properties>
+    <waypoints>
+      <edgeproperty
+        id="[HasInterfaces : (interfaces:AccessInterface4, networkComponents:NetworkComponent2)]::WayPoint::0"
+        sizeCalculated="true" type="WayPoint" userDefined="false" visible="true">
+        <name>0</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyAttachedIntersection">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+        </strategy>
+        <id>0</id>
+        <specialid>1</specialid>
+        <hidden>false</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="[HasInterfaces : (interfaces:AccessInterface4, networkComponents:NetworkComponent2)]::WayPoint::1"
+        sizeCalculated="true" type="WayPoint" userDefined="false" visible="true">
+        <name>1</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyAttachedIntersection">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+        </strategy>
+        <id>1</id>
+        <specialid>2</specialid>
+        <hidden>false</hidden>
+      </edgeproperty>
+    </waypoints>
+    <hidden>true</hidden>
+    <linkValue>[HasInterfaces : (interfaces:AccessInterface4, networkComponents:NetworkComponent2)]</linkValue>
+  </edge>
+  <edge type="BinaryEdge">
+    <source>AccessInterface6</source>
+    <target>AccessInterface4</target>
+    <name>HasAggregationLayer2Interfaces</name>
+    <properties>
+      <edgeproperty
+        id="[HasAggregationLayer2Interfaces : (aggregationInterfaces:AccessInterface4, aggregatorInterface:AccessInterface6)]::source::rolename"
+        sizeCalculated="true" type="rolename" userDefined="false" visible="true">
+        <name>aggregatorInterface</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <attached>[HasAggregationLayer2Interfaces : (aggregationInterfaces:AccessInterface4, aggregatorInterface:AccessInterface6)]::WayPoint::0</attached>
+          <offset_x>8</offset_x>
+          <offset_y>8</offset_y>
+          <placement>TOP</placement>
+        </strategy>
+        <hidden>false</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="[HasAggregationLayer2Interfaces : (aggregationInterfaces:AccessInterface4, aggregatorInterface:AccessInterface6)]::source::multiplicity"
+        sizeCalculated="true" type="multiplicity" userDefined="false" visible="true">
+        <name>0..1</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <attached>[HasAggregationLayer2Interfaces : (aggregationInterfaces:AccessInterface4, aggregatorInterface:AccessInterface6)]::WayPoint::0</attached>
+          <offset_x>8</offset_x>
+          <offset_y>8</offset_y>
+          <placement>BOTTOM</placement>
+        </strategy>
+        <hidden>false</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="[HasAggregationLayer2Interfaces : (aggregationInterfaces:AccessInterface4, aggregatorInterface:AccessInterface6)]::target::rolename"
+        sizeCalculated="true" type="rolename" userDefined="false" visible="true">
+        <name>aggregationInterfaces</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <attached>[HasAggregationLayer2Interfaces : (aggregationInterfaces:AccessInterface4, aggregatorInterface:AccessInterface6)]::WayPoint::1</attached>
+          <offset_x>8</offset_x>
+          <offset_y>8</offset_y>
+          <placement>TOP</placement>
+        </strategy>
+        <hidden>false</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="[HasAggregationLayer2Interfaces : (aggregationInterfaces:AccessInterface4, aggregatorInterface:AccessInterface6)]::target::multiplicity"
+        sizeCalculated="true" type="multiplicity" userDefined="false" visible="true">
+        <name>*</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <attached>[HasAggregationLayer2Interfaces : (aggregationInterfaces:AccessInterface4, aggregatorInterface:AccessInterface6)]::WayPoint::1</attached>
+          <offset_x>8</offset_x>
+          <offset_y>8</offset_y>
+          <placement>BOTTOM</placement>
+        </strategy>
+        <hidden>false</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="[HasAggregationLayer2Interfaces : (aggregationInterfaces:AccessInterface4, aggregatorInterface:AccessInterface6)]::AssociationName"
+        sizeCalculated="true" type="associationName" userDefined="false" visible="true">
+        <name>HasAggregationLayer2Interfaces</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyInBetween">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <offsetX>0.0</offsetX>
+          <offsetY>-10.0</offsetY>
+          <related length="2">
+            <related0>[HasAggregationLayer2Interfaces : (aggregationInterfaces:AccessInterface4, aggregatorInterface:AccessInterface6)]::WayPoint::0</related0>
+            <related1>[HasAggregationLayer2Interfaces : (aggregationInterfaces:AccessInterface4, aggregatorInterface:AccessInterface6)]::WayPoint::1</related1>
+          </related>
+        </strategy>
+        <hidden>false</hidden>
+      </edgeproperty>
+    </properties>
+    <waypoints>
+      <edgeproperty
+        id="[HasAggregationLayer2Interfaces : (aggregationInterfaces:AccessInterface4, aggregatorInterface:AccessInterface6)]::WayPoint::0"
+        sizeCalculated="true" type="WayPoint" userDefined="false" visible="true">
+        <name>0</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyAttachedIntersection">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+        </strategy>
+        <id>0</id>
+        <specialid>1</specialid>
+        <hidden>false</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="[HasAggregationLayer2Interfaces : (aggregationInterfaces:AccessInterface4, aggregatorInterface:AccessInterface6)]::WayPoint::1"
+        sizeCalculated="true" type="WayPoint" userDefined="false" visible="true">
+        <name>1</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyAttachedIntersection">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+        </strategy>
+        <id>1</id>
+        <specialid>2</specialid>
+        <hidden>false</hidden>
+      </edgeproperty>
+    </waypoints>
+    <hidden>true</hidden>
+    <linkValue>[HasAggregationLayer2Interfaces : (aggregationInterfaces:AccessInterface4, aggregatorInterface:AccessInterface6)]</linkValue>
+  </edge>
+  <edge type="BinaryEdge">
+    <source>AccessInterface4</source>
+    <target>Layer1Interface3</target>
+    <name>DependsOnLayer1Interface</name>
+    <properties>
+      <edgeproperty
+        id="[DependsOnLayer1Interface : (layer1Interface:Layer1Interface3, layer2Interfaces:AccessInterface4)]::source::rolename"
+        sizeCalculated="true" type="rolename" userDefined="false" visible="true">
+        <name>layer2Interfaces</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <attached>[DependsOnLayer1Interface : (layer1Interface:Layer1Interface3, layer2Interfaces:AccessInterface4)]::WayPoint::0</attached>
+          <offset_x>8</offset_x>
+          <offset_y>8</offset_y>
+          <placement>TOP</placement>
+        </strategy>
+        <hidden>false</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="[DependsOnLayer1Interface : (layer1Interface:Layer1Interface3, layer2Interfaces:AccessInterface4)]::source::multiplicity"
+        sizeCalculated="true" type="multiplicity" userDefined="false" visible="true">
+        <name>*</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <attached>[DependsOnLayer1Interface : (layer1Interface:Layer1Interface3, layer2Interfaces:AccessInterface4)]::WayPoint::0</attached>
+          <offset_x>8</offset_x>
+          <offset_y>8</offset_y>
+          <placement>BOTTOM</placement>
+        </strategy>
+        <hidden>false</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="[DependsOnLayer1Interface : (layer1Interface:Layer1Interface3, layer2Interfaces:AccessInterface4)]::target::multiplicity"
+        sizeCalculated="true" type="multiplicity" userDefined="false" visible="true">
+        <name>0..1</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <attached>[DependsOnLayer1Interface : (layer1Interface:Layer1Interface3, layer2Interfaces:AccessInterface4)]::WayPoint::1</attached>
+          <offset_x>8</offset_x>
+          <offset_y>8</offset_y>
+          <placement>BOTTOM</placement>
+        </strategy>
+        <hidden>false</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="[DependsOnLayer1Interface : (layer1Interface:Layer1Interface3, layer2Interfaces:AccessInterface4)]::target::rolename"
+        sizeCalculated="true" type="rolename" userDefined="false" visible="true">
+        <name>layer1Interface</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <attached>[DependsOnLayer1Interface : (layer1Interface:Layer1Interface3, layer2Interfaces:AccessInterface4)]::WayPoint::1</attached>
+          <offset_x>8</offset_x>
+          <offset_y>8</offset_y>
+          <placement>TOP</placement>
+        </strategy>
+        <hidden>false</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="[DependsOnLayer1Interface : (layer1Interface:Layer1Interface3, layer2Interfaces:AccessInterface4)]::AssociationName"
+        sizeCalculated="true" type="associationName" userDefined="false" visible="true">
+        <name>DependsOnLayer1Interface</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyInBetween">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <offsetX>0.0</offsetX>
+          <offsetY>-10.0</offsetY>
+          <related length="2">
+            <related0>[DependsOnLayer1Interface : (layer1Interface:Layer1Interface3, layer2Interfaces:AccessInterface4)]::WayPoint::0</related0>
+            <related1>[DependsOnLayer1Interface : (layer1Interface:Layer1Interface3, layer2Interfaces:AccessInterface4)]::WayPoint::1</related1>
+          </related>
+        </strategy>
+        <hidden>false</hidden>
+      </edgeproperty>
+    </properties>
+    <waypoints>
+      <edgeproperty
+        id="[DependsOnLayer1Interface : (layer1Interface:Layer1Interface3, layer2Interfaces:AccessInterface4)]::WayPoint::0"
+        sizeCalculated="true" type="WayPoint" userDefined="false" visible="true">
+        <name>0</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyAttachedIntersection">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+        </strategy>
+        <id>0</id>
+        <specialid>1</specialid>
+        <hidden>false</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="[DependsOnLayer1Interface : (layer1Interface:Layer1Interface3, layer2Interfaces:AccessInterface4)]::WayPoint::1"
+        sizeCalculated="true" type="WayPoint" userDefined="false" visible="true">
+        <name>1</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyAttachedIntersection">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+        </strategy>
+        <id>1</id>
+        <specialid>2</specialid>
+        <hidden>false</hidden>
+      </edgeproperty>
+    </waypoints>
+    <hidden>true</hidden>
+    <linkValue>[DependsOnLayer1Interface : (layer1Interface:Layer1Interface3, layer2Interfaces:AccessInterface4)]</linkValue>
+  </edge>
+  <edge type="BinaryEdge">
+    <source>AccessInterface5</source>
+    <target>Layer1Interface4</target>
+    <name>D_DependsOnLayer1Interface</name>
+    <properties>
+      <edgeproperty
+        id="virtual[D_DependsOnLayer1Interface : (derivedLayer1Interfaces:Layer1Interface4, derivedLayer2Interfaces:AccessInterface5)]::source::multiplicity"
+        sizeCalculated="true" type="multiplicity" userDefined="false" visible="true">
+        <name>*</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <attached>virtual[D_DependsOnLayer1Interface : (derivedLayer1Interfaces:Layer1Interface4, derivedLayer2Interfaces:AccessInterface5)]::WayPoint::0</attached>
+          <offset_x>8</offset_x>
+          <offset_y>8</offset_y>
+          <placement>BOTTOM</placement>
+        </strategy>
+        <hidden>false</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="virtual[D_DependsOnLayer1Interface : (derivedLayer1Interfaces:Layer1Interface4, derivedLayer2Interfaces:AccessInterface5)]::source::rolename"
+        sizeCalculated="true" type="rolename" userDefined="false" visible="true">
+        <name>derivedLayer2Interfaces</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <attached>virtual[D_DependsOnLayer1Interface : (derivedLayer1Interfaces:Layer1Interface4, derivedLayer2Interfaces:AccessInterface5)]::WayPoint::0</attached>
+          <offset_x>8</offset_x>
+          <offset_y>8</offset_y>
+          <placement>TOP</placement>
+        </strategy>
+        <hidden>false</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="virtual[D_DependsOnLayer1Interface : (derivedLayer1Interfaces:Layer1Interface4, derivedLayer2Interfaces:AccessInterface5)]::target::rolename"
+        sizeCalculated="true" type="rolename" userDefined="false" visible="true">
+        <name>/derivedLayer1Interfaces</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <attached>virtual[D_DependsOnLayer1Interface : (derivedLayer1Interfaces:Layer1Interface4, derivedLayer2Interfaces:AccessInterface5)]::WayPoint::1</attached>
+          <offset_x>8</offset_x>
+          <offset_y>8</offset_y>
+          <placement>TOP</placement>
+        </strategy>
+        <hidden>false</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="virtual[D_DependsOnLayer1Interface : (derivedLayer1Interfaces:Layer1Interface4, derivedLayer2Interfaces:AccessInterface5)]::target::multiplicity"
+        sizeCalculated="true" type="multiplicity" userDefined="false" visible="true">
+        <name>*</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <attached>virtual[D_DependsOnLayer1Interface : (derivedLayer1Interfaces:Layer1Interface4, derivedLayer2Interfaces:AccessInterface5)]::WayPoint::1</attached>
+          <offset_x>8</offset_x>
+          <offset_y>8</offset_y>
+          <placement>BOTTOM</placement>
+        </strategy>
+        <hidden>false</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="virtual[D_DependsOnLayer1Interface : (derivedLayer1Interfaces:Layer1Interface4, derivedLayer2Interfaces:AccessInterface5)]::AssociationName"
+        sizeCalculated="true" type="associationName" userDefined="false" visible="true">
+        <name>D_DependsOnLayer1Interface</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyInBetween">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <offsetX>0.0</offsetX>
+          <offsetY>-10.0</offsetY>
+          <related length="2">
+            <related0>virtual[D_DependsOnLayer1Interface : (derivedLayer1Interfaces:Layer1Interface4, derivedLayer2Interfaces:AccessInterface5)]::WayPoint::0</related0>
+            <related1>virtual[D_DependsOnLayer1Interface : (derivedLayer1Interfaces:Layer1Interface4, derivedLayer2Interfaces:AccessInterface5)]::WayPoint::1</related1>
+          </related>
+        </strategy>
+        <hidden>false</hidden>
+      </edgeproperty>
+    </properties>
+    <waypoints>
+      <edgeproperty
+        id="virtual[D_DependsOnLayer1Interface : (derivedLayer1Interfaces:Layer1Interface4, derivedLayer2Interfaces:AccessInterface5)]::WayPoint::0"
+        sizeCalculated="true" type="WayPoint" userDefined="false" visible="true">
+        <name>0</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyAttachedIntersection">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+        </strategy>
+        <id>0</id>
+        <specialid>1</specialid>
+        <hidden>false</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="virtual[D_DependsOnLayer1Interface : (derivedLayer1Interfaces:Layer1Interface4, derivedLayer2Interfaces:AccessInterface5)]::WayPoint::1"
+        sizeCalculated="true" type="WayPoint" userDefined="false" visible="true">
+        <name>1</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyAttachedIntersection">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+        </strategy>
+        <id>1</id>
+        <specialid>2</specialid>
+        <hidden>false</hidden>
+      </edgeproperty>
+    </waypoints>
+    <hidden>true</hidden>
+    <linkValue>virtual[D_DependsOnLayer1Interface : (derivedLayer1Interfaces:Layer1Interface4, derivedLayer2Interfaces:AccessInterface5)]</linkValue>
+  </edge>
+</diagram_Layout>

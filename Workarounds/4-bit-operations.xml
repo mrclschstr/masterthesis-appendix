@@ -1,0 +1,11 @@
+<extensions>
+	<operation source="Integer" name="bitAnd" returnType="Integer">
+    <parameter>
+			<par name="i" type="Integer" />
+		</parameter>
+		<body><![CDATA[
+			$self & $i
+		]]>
+		</body>
+	</operation>
+</extensions>

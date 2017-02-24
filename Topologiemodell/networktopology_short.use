@@ -1,0 +1,414 @@
+model NetworkTopologyModel
+
+-- Nach IEEE 802.1Q-2014, Abschnitt 6.9.
+enum AcceptableFrameType {admitAll, admitTagged, admitUntagged}
+
+-- Allgemeine, schichtunabhängige Geräte eines Rechnernetzes
+class NetworkComponent
+  attributes
+    name : String
+  operations
+    /* Für die Verwendung in Algorithmen. Darf nicht überall verwendet werden, da es bspw.
+    bei den strukturellen Invarianten wirklich auf die phy. Chassis ankommt! */
+    id() : NetworkComponent =
+      if self.logicalNetworkComponent <> null then self.logicalNetworkComponent
+      else self
+      endif
+    getAllInterfaces() : Set(Interface) =
+      self.physicalNetworkComponents->closure( physicalNetworkComponents).interfaces->union(self.interfaces)->asSet()
+    getLayer1Interfaces() : Set(Layer1Interface) =
+      self.getAllInterfaces()->selectByKind(Layer1Interface)->asSet()
+    getLayer2Interfaces() : Set(Layer2Interface) =
+      self.getAllInterfaces()->selectByKind(Layer2Interface)->asSet()
+    /* Gibt alle direkt benarchbarten Netzkomponenten zurück, die sich über einen Peer
+    Link erreichen lassen (-> Cisco VPC-Konstrukt, vPC Peer Device) */
+    getPeerNetworkComponents() : Set(NetworkComponent) =
+      self.getLayer2Interfaces().getPeerOpposites().networkComponents->asSet()
+    /* Gibt alle direkt benachbarten Netzkomponenten zurück, die sich über einen
+    Inter-Chassis Link erreichen lassen (~> Cisco VSS-Konstruktion) */
+    getInterChassisNetworkComponents() : Set(NetworkComponent) =
+      self.getLayer2Interfaces().getInterChassisOpposites().networkComponents->asSet()
+    /* Gibt die Netzkomponenten zurück, die über die erste Schicht erreichbar sind. Dazu
+    wird die OCL-Operation closure() verwendet, um allen Layer1Links mit Hilfe der
+    abgeleiteten Assoziation "D_Layer1Connection" zu folgen. */
+    getLayer1Reachability() : Set(NetworkComponent) =
+      Set{self.id()}->closure(derivedDestinationNetworkComponents)
+    /* Gibt die Netzkomponenten zurück, die über die zweite Schicht erreichbar sind. Die
+    Rückgabe besteht aus den Netzkomponenten (inkl. ein- und ausgehenden Interfaces), die
+    pro definiertem VLAN erreichbar sind. */
+    getLayer2Reachability() : Set(Tuple(vids:Set(Integer), topo:Set(Tuple(nc:NetworkComponent, ins:Set(Layer2Interface), outs:Set(Layer2Interface))))) =
+      let filtered = self.id().getLayer2Exploration(false)->collect(t |
+        Tuple{vid = t.vid, steps = t.steps.inNCs->asSet()->collect(n |
+        Tuple{nc = n, ins = t.steps->select(tt | tt.inInt <> null and tt.inNCs->includes(n)).inInt->asSet(),
+        outs = t.steps->select(tt | tt.outInt <> null and tt.outInt.networkComponents.id()->includes(n)).outInt->asSet()})->asSet()})->asSet()
+      in filtered->collect(t | Tuple{vids = filtered->select(tt | tt.steps = t.steps).vid->asSet(), topo = t.steps})->asSet()
+    /* Führt eine Schleifenfindung auf der Rückgabe der Operation getLayer2Exploration()
+    durch. Prüft allerdings nur, ob die Netzkomponente selbst Teil einer Schleife ist. */
+    getLayer2Loops() : Set(Tuple(vids:Set(Integer), topo:Set(Tuple(nc:NetworkComponent, ins:Set(Layer2Interface), outs:Set(Layer2Interface))))) =
+      let filtered = self.id().getLayer2Exploration(true)->collect(t |
+        Tuple{vid = t.vid, steps = t.steps->reject(tt | tt.inInt = null)})->select(t |
+        t.steps.inNCs->includes(self.id()))->collect(t | Tuple{vid = t.vid, steps = t.steps.inNCs->asSet()->collect(n |
+        Tuple{nc = n, ins = t.steps->select(tt | tt.inNCs->includes(n)).inInt->asSet(),
+        outs = t.steps->select(tt | tt.outInt <> null and tt.outInt.networkComponents.id()->includes(n)).outInt->asSet()})->asSet()})->asSet()
+      in filtered->collect(t | Tuple{vids = filtered->select(tt | tt.steps = t.steps).vid->asSet(), topo = t.steps})->asSet()
+    /* Erkundung der Topologie als Broadcast (ungleich aber nicht unähnlich einer
+    Broadcastdomäne). Die Vorgehensweise ist dabei an die Frameverarbeitung Ingress,
+    Forward und Egress angelehnt. */
+    getLayer2Exploration(filterDot1QInterfaces : Boolean) : Bag(Tuple(vid:Integer, steps:Set(Tuple(outInt:Layer2Interface, inInt:Layer2Interface, inVid:Integer, inNCs:Set(NetworkComponent))))) =
+      self.id().getLayer2Interfaces().getVLANMemberships()->asSet()->collect(v |
+      Tuple{vid = v, steps = Set{Tuple{outInt:Layer2Interface = null, inInt:Layer2Interface = null, inVid = v, inNCs = Set{self.id()}}}->closure(t |
+      -- Alle Interfaces raussuchen, welche Frames mit aktueller VID ausgeben können
+      t.inNCs.getLayer2Interfaces()->select(i | i <> t.inInt and i.egresses(t.inVid))->select(i |
+      -- Alle Routing Interfaces herausfiltern, sofern per Parameter gesetzt ist
+      filterDot1QInterfaces implies not (i.oclIsTypeOf(TaggedDot1QInterface) or i.oclIsTypeOf(UntaggedDot1QInterface)))->select(i |
+      -- MC-LAGs aussortieren, sofern Frame über Peer Link eingegangen ist
+      (t.inInt <> null and t.outInt.getPeerOpposites()->includes(t.inInt)) implies i.networkComponents.id()->excludesAll( t.inNCs.getPeerNetworkComponents().id()))->collect(i |
+      i.getOpposites()->select(o | o.ingress(i, t.inVid) > 0)->collect(o |
+      Tuple{outInt = i, inInt = o, inVid = o.ingress(i, t.inVid), inNCs = o.networkComponents.id()->asSet()})))})
+  constraints
+    inv S_AllValuesDefined:
+      self.name <> null
+    inv S_NestingAtMostTwoLevels:
+      self.logicalNetworkComponent <> null implies self.physicalNetworkComponents->isEmpty()
+    inv C_NetworkComponentNameIsGloballyUnique:
+      NetworkComponent.allInstances()->isUnique(name)
+    inv C_Layer1InterfaceNamesAreUnique:
+      self.getLayer1Interfaces()->isUnique(name)
+    inv C_Layer2InterfaceNamesAreUnique:
+      self.getLayer2Interfaces()->isUnique(name)
+    inv S_LogicalNetworkComponentsDontHaveDirectInterfaces:
+      self.physicalNetworkComponents->notEmpty() implies self.interfaces->isEmpty()
+    inv C_PhysicalNetworkComponentsRequireInterChassisLink:
+      self.physicalNetworkComponents->size() > 1 implies
+      self.physicalNetworkComponents->forAll(n | self.physicalNetworkComponents = n.getInterChassisNetworkComponents()->including(n))
+end
+
+-- Interfaces verbinden Netzkomponenten über Links
+abstract class Interface
+  attributes
+    name : String
+  operations
+    getOpposites() : Set(Interface) = null
+  constraints
+    inv S_AllValuesDefined:
+      self.name <> null
+end
+
+-- Abstraktes Interfaces der ersten OSI-Schicht (-> physisches Interface)
+class Layer1Interface < Interface
+  operations
+    getOpposites() : Set(Layer1Interface) =
+      Set{self.layer1Link.layer1Interfaces->excluding(self)}->flatten()->excluding(null)
+  constraints
+    inv S_AssociatedWithAtMostOneNetworkComponent:
+      self.networkComponents->size() <= 1
+end
+
+-- Spezialisiertes Interface der zweiten OSI-Schicht (-> Ethernet-Interface)
+abstract class Layer2Interface < Interface
+  attributes
+    description : String init : ''
+    MAC : String init : '00:00:00:00:00:00'
+    /* Sogenannte "Port VLAN-ID", dessen Frames üblicherweise (~ #admitAll) ungetaggt
+    verschickt werden. Standardwert nach IEEE 802.1Q-2014, Abschnitt 9.6. */
+    PVID : Integer init : 1
+    /* Weitere dem Interface zugeordnete VLAN-IDs als Menge von Integern. Deren Frames
+    werden üblicherweise (~ #admitAll) getaggt versendet. */
+    VID : Set(Integer) init : Set{}
+    /* Dieser Parameter steuert das Empfangs- und Sendeverhalten von Frames. Standardwert
+    nach IEEE 802.1Q-2014, Abschnitt 6.9. */
+    frameType : AcceptableFrameType init : #admitAll
+  operations
+    getOpposites() : Set(Layer2Interface) =
+      self.layer2Links.layer2Interfaces->excluding(self)->asSet()
+    -- Alle korr. Layer2Interfaces zurück, die über Peer Link erreichbar sind
+    getPeerOpposites() : Set(Layer2Interface) =
+      self.layer2Links->select(l | l.peerLink).layer2Interfaces->excluding(self)->asSet()
+    -- Alle korr. Layer2Interfaces zurück, die über Inter-Chassis Link erreichbar sind
+    getInterChassisOpposites() : Set(Layer2Interface) =
+      self.layer2Links->select(l | l.interChassisLink).layer2Interfaces->excluding(self)->asSet()
+    getLayer1Interfaces() : Set(Layer1Interface) =
+      self.aggregationInterfaces->closure( aggregationInterfaces).layer1Interface->including( self.layer1Interface)->excluding(null)->asSet()
+    -- Gibt alle VLANs zurück bei denen das Layer2Interface Mitglied ist
+    getVLANMemberships() : Set(Integer) =
+      self.VID->including(self.PVID)
+    /* Anlehnung an die Ingress-Verarbeitung von Frames von Netzkomponenten. Rückgabe der
+    Operation ist die VLAN-ID, mit der das interne Forwarding weitergeführt wird. */
+    ingress(aLayer2Interface : Layer2Interface, aVID : Integer) : Integer =
+      if aLayer2Interface.frameType = #admitTagged or (aLayer2Interface.frameType = #admitAll and aLayer2Interface.PVID <> aVID) then
+        if Set{#admitTagged, #admitAll}->includes(self.frameType) and self.getVLANMemberships()->includes(aVID) then aVID
+        else -1 -- Statuscode für "Frame wird blockiert"
+        endif
+      else
+        if Set{#admitUntagged, #admitAll}->includes(self.frameType) then self.PVID
+        else -1 -- Statuscode für "Frame wird blockiert"
+        endif
+      endif
+      -- Das angegebene Layer2Interface muss Mitglied des angegebenen VLANs (aVID) sein
+      pre EgressingInterfaceIsMemberOfGivenVID: aLayer2Interface.getVLANMemberships()->includes(aVID)
+    /* Anlehnung an die Egress-Verarbeitung von Frames innerhalb von Netzkomponenten. Gibt
+    true zurück, sofern das Layer2Interface Mitglied des angegebenen VLANs (aVID) ist. */
+    egresses(aVID : Integer) : Boolean =
+      self.getVLANMemberships()->includes(aVID)
+  constraints
+    inv S_AllValuesDefined:
+      self.description <> null and self.MAC <> null and self.PVID <> null and self.VID <> null and self.VID->excludes(null)
+    inv S_NestingAtMostTwoLevels:
+      self.aggregatorInterface <> null implies self.aggregationInterfaces->isEmpty()
+    inv S_OneLayer2LinkPerVLANMembershipAllowed:
+      self.layer2Links->size() <= self.getVLANMemberships()->size()
+    inv S_Layer2LinksLeadToDistinctOpposites:
+      self.layer2Links->forAll(l1, l2 | l1 <> l2 implies l1.layer2Interfaces->excluding(self)->excludesAll( l2.layer2Interfaces->excluding(self)))
+    inv S_Layer1InterfacesAreAssociatedToSameNetworkComponent:
+      self.networkComponents->includesAll(self.getLayer1Interfaces().networkComponents)
+    inv C_MACAddressIsGloballyUnique:
+      Layer2Interface.allInstances()->isUnique(MAC)
+    inv C_DefinedVLANIDsHaveAValidRange:
+      self.getVLANMemberships()->forAll(v | 1 <= v and v <= 4094) and self.VID->excludes(self.PVID)
+    inv C_OppositeLayer2InterfacesReceiveFramesWithDefinedVIDs:
+      self.getOpposites()->notEmpty() implies
+      self.getVLANMemberships()->forAll(v | self.getOpposites()->exists(o |
+        o.ingress(self, v) > 0 and
+        (o.ingress(self, v) <> v implies
+        (self.oclIsTypeOf(UnawareInterface) or o.oclIsTypeOf(UnawareInterface)))))
+    inv S_NonAggregatorInterfacesAreAssociatedWithAtMostOneNetworkComponent:
+      self.aggregationInterfaces->isEmpty() implies self.networkComponents->size() <= 1
+    inv S_AggregationInterfacesDontHaveLinks:
+      self.aggregationInterfaces->forAll(i | i.layer2Links->isEmpty())
+    inv S_AggregationInterfacesHaveDistinctLayer1Interfaces:
+      self.aggregationInterfaces->forAll(i1, i2 | i1 <> i2 implies i1.layer1Interface <> i2.layer1Interface)
+    inv C_AssociatedLayer1InterfacesAreProperlyConnected:
+      self.getLayer1Interfaces().getOpposites()->includesAll( self.getOpposites().getLayer1Interfaces())
+    inv C_AggregationInterfacesHaveIdenticalConfiguration:
+      self.aggregationInterfaces->forAll(i | self.PVID = i.PVID and self.VID = i.VID and self.frameType = i.frameType)
+    inv C_PeerLinkRequiredForMultiChassisAggregatorInterfaces:
+      self.networkComponents->size() > 1 implies
+      self.networkComponents->forAll(n | self.networkComponents = n.getPeerNetworkComponents()->including(n))
+    inv C_PeerLinkHasToTransferDefinedVIDsOfMultiChassisAggregatorInterfaces:
+      self.networkComponents->size() > 1 implies
+      self.networkComponents->forAll(n | n.getLayer2Interfaces()->forAll(i | i.getPeerOpposites()->forAll(o | self.getVLANMemberships()->forAll(v | i.egresses(v) and o.ingress(i, v) > 0))))
+end
+
+-- Spezialisiertes Layer2Interface, welches ein VLAN-unfähiges Interface repräsentiert
+class UnawareInterface < Layer2Interface
+  constraints
+    inv S_NestingProhibited:
+      self.aggregationInterfaces->isEmpty()
+    inv S_UnawareInterfacesHaveDirectLayer1Interfaces:
+      self.layer1Interface <> null
+    inv C_ValidInterfaceConfiguration:
+      self.PVID = 1 and self.VID->isEmpty() and self.frameType = #admitUntagged
+end
+
+-- Spezialisiertes Layer2Interface, welches ein Trunk Interface repräsentiert.
+class TrunkInterface < Layer2Interface
+  constraints
+    inv S_OnlySameInterfaceTypeNestingAllowed:
+      self.aggregationInterfaces->forAll(i | i.oclIsTypeOf(TrunkInterface))
+    inv S_AggregationInterfacesHaveDirectLayer1Interfaces:
+      self.aggregationInterfaces->isEmpty() implies self.layer1Interface <> null
+    inv S_AggregatorInterfacesDontHaveDirectLayer1Interfaces:
+      self.aggregationInterfaces->notEmpty() implies self.layer1Interface = null
+    inv C_ValidInterfaceConfiguration:
+      self.VID->notEmpty() and Set{#admitAll, #admitTagged}->includes(self.frameType)
+end
+
+-- Spezialisierung eines Layer2Interfaces, welches ausschließlich Mitglied eines VLANs ist
+abstract class UntaggedInterface < Layer2Interface
+  constraints
+    inv S_AggregationInterfacesHaveDirectLayer1Interfaces:
+      self.aggregationInterfaces->isEmpty() implies self.layer1Interface <> null
+    inv S_AggregatorInterfacesDontHaveDirectLayer1Interfaces:
+      self.aggregationInterfaces->notEmpty() implies self.layer1Interface = null
+    inv C_ValidInterfaceConfiguration:
+      self.VID->isEmpty() and Set{#admitAll, #admitUntagged}->includes(self.frameType)
+end
+
+-- Spezialisiertes UntaggedInterface, welches ein Access Interface repräsentiert
+class AccessInterface < UntaggedInterface
+  constraints
+    inv S_OnlySameInterfaceTypeNestingAllowed:
+      self.aggregationInterfaces->forAll(i | i.oclIsTypeOf(AccessInterface))
+end
+
+/* Spezialisiertes UntaggedInterface, welches ein UntaggedDot1QInterface repräsentiert.
+Ähnlichkeit zu einem Access Interface ist vorhanden, jedoch können auf einem
+UntaggedDot1QInterface Subinterfaces (TaggedDot1QInterfaces) definiert werden. */
+class UntaggedDot1QInterface < UntaggedInterface
+  constraints
+    inv S_OnlySameInterfaceTypeNestingAllowed:
+      self.aggregationInterfaces->forAll(i | i.oclIsTypeOf(UntaggedDot1QInterface))
+    inv C_AggregatorInterfaceRequiresTaggedDot1QInterfaces:
+      self.aggregationInterfaces->notEmpty() implies self.taggedDot1QInterfaces->notEmpty()
+    inv C_AggregationInterfacesDontHaveTaggedDot1QInterfaces:
+      self.aggregationInterfaces->selectByKind(UntaggedDot1QInterface)->forAll(i | i.taggedDot1QInterfaces->isEmpty())
+    inv C_TaggedDot1InterfaceVIDsDontIntersect:
+      self.taggedDot1QInterfaces->forAll(i1, i2 | i1 <> i2 implies i1.VID->excludesAll(i2.VID))
+    inv C_EveryTaggedDot1InterfaceRequiresAnOpposite:
+      self.getOpposites()->notEmpty() implies self.taggedDot1QInterfaces->forAll(i | i.getOpposites()->notEmpty())
+end
+
+/* Spezialisiertes Layer2Interface, welches ein getaggtes Dot1QInterface repräsentiert. In
+der Praxis werden diese Interfaces auch als "Subinterfaces" bezeichnet. */
+class TaggedDot1QInterface < Layer2Interface
+  operations
+    -- Überladen der Operation für ein spezielles Verhalten bei TaggedDot1QInterface
+    getLayer1Interfaces() : Set(Layer1Interface) =
+      self.untaggedDot1QInterface.aggregationInterfaces->closure(a ggregationInterfaces).layer1Interface->including( self.untaggedDot1QInterface.layer1Interface)->excluding(null)->asSet()
+    -- Überladen der Operation für ein spezielles Verhalten bei TaggedDot1QInterfaces
+    getVLANMemberships() : Set(Integer) =
+      self.VID
+  constraints
+    inv S_NestingProhibited:
+      self.aggregationInterfaces->isEmpty()
+    inv S_TaggedDot1QInterfacesDontHaveDirectLayer1Interfaces:
+      self.layer1Interface = null
+    inv C_ValidInterfaceConfiguration:
+      self.PVID = -1 and self.VID->size() = 1 and self.frameType = #admitTagged
+end
+
+-- Spezialisiertes abstraktes Interface der dritten OSI-Schicht
+abstract class Layer3Interface < Interface
+  attributes
+    description : String init : ''
+end
+
+-- Spezialisiertes Layer3Interface, welches einem IPv4-Interface entspricht
+class IPv4Interface < Layer3Interface
+  attributes
+    IP : Sequence(Integer) init : Sequence{127,0,0,1}
+    subnet : Sequence(Integer) init : Sequence{255,255,255,0}
+end
+
+-- Eine abstrakte physische oder virtuelle bidirektionale Verbindung zweier Interfaces
+abstract class Link
+end
+
+-- Spezialisierter Link der ersten OSI-Schicht (-> physisches Kabel)
+class Layer1Link < Link
+  attributes
+    -- Abgeleitetes Attribut, welches die Anzahl der logischen Layer2Links zählt
+    logicalLinks : Integer derived =
+      self.derivedLayer2Links->size()
+end
+
+-- Spezialisierter Link der zweiten OSI-Schicht (-> logische Ethernet-Verbindung)
+class Layer2Link < Link
+  attributes
+    /* Markiert den aktuellen Layer2Link als einen IPL nach IEEE 802.1AX. Als
+    umgangssprachlicher Name wird "Peer Link" verwendet. */
+    peerLink : Boolean init : false
+    /* Markiert den aktuellen Layer2Link als einen ICCC nach RFC 7275. Als
+    umgangssprachlicher Name wird "Inter-Chassis Link" verwendet. */
+    interChassisLink : Boolean init : false
+    /* Abgeleitetes Attribut, welches die Anzahl der physischen Layer1Links zählt, auf
+    denen der aktuelle Layer2Link basiert. */
+    linkRedundancy : Integer derived =
+      self.derivedLayer1Links->size()
+    /* Abgeleitetes Attribut, welches die minimale Anzahl der physischen Chassis zählt,
+    auf denen der aktuelle Layer2Link basiert. */
+    chassisRedundancy : Integer derived =
+      self.layer2Interfaces->collect(i | i.getLayer1Interfaces().networkComponents->asSet()->size())->min()
+    minLinkRedundancy : Integer init : 1
+    minChassisRedundancy : Integer init : 1
+  constraints
+    inv S_AllValuesDefined:
+      self.peerLink <> null and self.interChassisLink <> null and minLinkRedundancy <> null and minChassisRedundancy <> null
+    inv S_InterChassisLinkImpliesSameLogicalNetworkComponent:
+      self.interChassisLink implies self.layer2Interfaces->forAll(i1, i2 | i1 <> i2 implies i1.networkComponents.id() = i2.networkComponents.id())
+    inv C_MinLinkRedundancyLowerOrEqualThanLinkRedundancy:
+      self.minLinkRedundancy > 0 and self.minLinkRedundancy <= self.linkRedundancy
+    inv C_MinChassisRedundancyLowerOrEqualThanChassisRedundancy:
+      self.minChassisRedundancy > 0 and self.minChassisRedundancy <= self.chassisRedundancy
+    inv C_BidirectionalCommunicationWithAtLeastOneVIDIsPossible:
+      self.layer2Interfaces->forAll(i1, i2 | i1 <> i2 implies i1.getVLANMemberships()->exists(v | i2.ingress(i1, v) > 0))
+end
+
+-- Spezialisierter Link der dritten OSI-Schicht (-> logische IP-Verbindung)
+class Layer3Link < Link
+end
+
+-- Laut 802.1AX besteht ein Portal aus max. drei Portal Systemen, daher [1..3]
+association HasInterfaces between
+  NetworkComponent[1..3] role networkComponents
+  Interface[*] role interfaces
+end
+
+association HasLayer1Link between
+  Layer1Interface[2] role layer1Interfaces
+  Layer1Link[0..1] role layer1Link
+end
+
+association HasLayer2Links between
+  Layer2Interface[2] role layer2Interfaces
+  Layer2Link[*] role layer2Links
+end
+
+association HasLayer3Links between
+  Layer3Interface[2] role layer3Interfaces
+  Layer3Link[*] role layer3Links
+end
+
+association DependsOnLayer1Interface between
+  Layer2Interface[*] role layer2Interfaces
+  Layer1Interface[0..1] role layer1Interface
+end
+
+association DependsOnLayer2Interfaces between
+  Layer3Interface[*] role layer3Interfaces
+  Layer2Interface[1..*] role layer2Interfaces
+end
+
+association DependsOnUntaggedDot1QInterface between
+  TaggedDot1QInterface[*] role taggedDot1QInterfaces
+  UntaggedDot1QInterface[1] role untaggedDot1QInterface
+end
+
+association DependsOnLayer2Link between
+  Layer3Link[*] role layer3Links
+  Layer2Link[1..*] role layer2Link
+end
+
+-- Name an das "LogicalDevice" des CIM Network Models angelehnt
+composition HasPhysicalNetworkComponents between
+  NetworkComponent[0..1] role logicalNetworkComponent
+  NetworkComponent[*] role physicalNetworkComponents
+end
+
+/* IEEE 802.1AX gibt kein Maximum für Aggregation Interfaces vor. Rollennamen an
+IEEE 802.1AX angelehnt. */
+aggregation HasAggregationLayer2Interfaces between
+  Layer2Interface[0..1] role aggregatorInterface
+  Layer2Interface[*] role aggregationInterfaces -- Oder auch "SimpleInterface" in IO!
+end
+
+-- Alle Interfaces ohne direkt assoziierte Interfaces sind transitiv abgeleitet
+association D_HasInterfaces between
+  NetworkComponent[*] role derivedNetworkComponents
+  Interface[*] role derivedInterfaces derived =
+    self.getAllInterfaces() - self.interfaces
+end
+
+/* Allen Layer1Links folgen und physischen/logischen Netzkomponenten einsammeln aber die
+"eigenen" physischen/logischen Netzkomponenten aussortieren */
+association D_Layer1Connection between
+  NetworkComponent[*] role derivedSourceNetworkComponents
+  NetworkComponent[*] role derivedDestinationNetworkComponents derived =
+    let components = self.getLayer1Interfaces().getOpposites().networkComponents
+    in components->union(components.id())->asSet() - self.physicalNetworkComponents->including( self.logicalNetworkComponent)->excluding(null)
+end
+
+-- Alle Layer1Interfaces ohne direkt assoziierte Layer1Interface sind transitiv abgeleitet
+association D_DependsOnLayer1Interface between
+  Layer2Interface[*] role derivedLayer2Interfaces
+  Layer1Interface[*] role derivedLayer1Interfaces derived =
+    self.getLayer1Interfaces()->excluding(self.layer1Interface)
+end
+
+-- Alle Layer1Links sammeln und anschließend durch Schnittmengen die relevanten ermitteln
+association D_DependsOnLayer1Link between
+  Layer2Link[*] role derivedLayer2Links
+  Layer1Link[1..*] role derivedLayer1Links derived =
+    let links = self.layer2Interfaces.getLayer1Interfaces().layer1Link->excluding(null)->asSet()
+    in links->select(l | self.layer2Interfaces->forAll(i1, i2 | i1 <> i2 implies i1.getLayer1Interfaces().layer1Link->intersection( i2.getLayer1Interfaces().layer1Link)->includes(l)))
+end

@@ -1,0 +1,9 @@
+mv -config satsolver:=minisat
+mv -config objExtraction:=off
+mv -config bitwidth:=13
+
+constraints -load /root/masterarbeit/Topologiemodell/networktopology_additional.invs
+mv -validate /root/masterarbeit/Performancetest/test_nc04.properties
+
+info state
+exit

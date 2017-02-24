@@ -1,0 +1,34 @@
+mv -config satsolver:=minisat
+mv -config objExtraction:=on
+mv -config bitwidth:=13
+
+!new NetworkComponent
+!new NetworkComponent
+!new NetworkComponent
+!new NetworkComponent
+!new TrunkInterface
+!new TrunkInterface
+!new Layer2Link
+!insert (NetworkComponent1,TrunkInterface1) into HasInterfaces
+!insert (NetworkComponent2,TrunkInterface1) into HasInterfaces
+!insert (TrunkInterface1,Layer2Link1) into HasLayer2Links
+!insert (TrunkInterface2,Layer2Link1) into HasLayer2Links
+!insert (NetworkComponent3,TrunkInterface2) into HasInterfaces
+!insert (NetworkComponent4,TrunkInterface2) into HasInterfaces
+!NetworkComponent1.name := 'NC-A'
+!NetworkComponent2.name := 'NC-B'
+!NetworkComponent3.name := 'NC-C'
+!NetworkComponent4.name := 'NC-D'
+!TrunkInterface1.name := 'Int0'
+!TrunkInterface1.description := 'Trunk Int0'
+!Layer2Link1.minLinkRedundancy := 2
+!Layer2Link1.minChassisRedundancy := 2
+!TrunkInterface2.name := 'Int1'
+!TrunkInterface2.description := 'Trunk Int1'
+!TrunkInterface1.VID := Set {10,20}
+!TrunkInterface2.VID := Set {10,20}
+
+constraints -load ..\..\Topologiemodell\networktopology_additional.invs
+mv -validate networktopology.properties
+
+info state

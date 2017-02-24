@@ -1,0 +1,51 @@
+model CampusExample
+
+abstract class Person
+  attributes
+    name : String
+    age : Integer
+end
+
+class Student < Person
+end
+
+class Course
+  attributes
+    subject : String
+end
+
+class University
+  attributes
+    location : String
+  operations
+    getStudentsOfCourse(aCourse : String) : Set(Student)
+end
+
+association EnrolledAt between
+  Student[1..*] role students
+  University[0..1] role university
+end
+
+aggregation Attends between
+  Course[*] role courses
+  Student[2..*] role attendants
+end
+
+composition TaughtAt between
+  University[1] role university
+  Course[*] role courses
+end
+
+constraints
+
+context Person inv ValidAge:
+  self.age >= 0 and self.age <= 120
+
+context Student inv MinimumEighteen:
+  self.age >= 18
+
+context Course inv MaxThirtyStudents:
+  self.attendants->size() <= 30
+
+context Student inv CoursesAreAtEnrolledUniversity:
+  self.courses->forAll(c | c.university = self.university)
